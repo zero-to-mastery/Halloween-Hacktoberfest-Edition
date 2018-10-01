@@ -15,3 +15,12 @@ video {
 	object-fit: cover;
 	pointer-events: none;
 }
+
+/* Improve Navbar */
+.navbar-nav {
+	width: 70%;
+	margin: 0px -5rem 0 auto !important;
+	text-align: center;
+	justify-content: center;
+	grid-template-columns: repeat(5, 1fr);
+}
