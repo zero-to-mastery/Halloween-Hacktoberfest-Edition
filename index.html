@@ -14,15 +14,19 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <!-- fontawesome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="./css/carousel.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-
+    <!-- meta icon -->
+    <link rel="icon" href="/images/pumpkin.jpg" type="image/gif" sizes="32x32">
   </head>
   <body>
-
+<div id="load"></div>
+    <div id="contents">
     <header>
+
         <!-- NavBar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Halloween</a>
@@ -39,7 +43,7 @@
 
             <!-- Recipes Link -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Recipes</a>
+              <a class="nav-link" href="recipes.html">Recipes</a>
             </li>
 
             <!-- Halloween facts Link -->
@@ -61,6 +65,48 @@
         </div>
       </nav>
     </header>
+
+
+    <!-- modal for signup-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center signup-head  ">
+                    <h4 class="modal-title w-100 font-weight-bold ">Sign up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-3">
+                        <i class="far fa-user prefix grey-text"></i>
+                        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                        <input type="text" id="orangeForm-name" class="form-control validate" placeholder="Enter your name">
+                       
+                    </div>
+                    <div class="md-form mb-3">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                        <input type="email" id="orangeForm-email" class="form-control validate" placeholder="Enter mailAddress">
+                        
+                    </div>
+    
+                    <div class="md-form mb-3">
+                        <i class="fas fa-unlock-alt"></i>
+                        <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                        <input type="password" id="orangeForm-pass" class="form-control validate" placeholder="Enter password">
+                        
+                    </div>
+    
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-primary">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<!-- /modal for signup/-->
 
     <main role="main">
         <!-- Carousel -->
@@ -84,7 +130,9 @@
               <div class="carousel-caption text-left">
                 <h1>Example headline.</h1>
                 <p class="tex">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Sign up 
+                  </button></p>
               </div>
             </div>
           </div>
@@ -93,7 +141,7 @@
           <div class="carousel-item">
             <img class="second-slide" src="./images/banners/pumpbanner.png" alt="Second slide">
             <div class="container">
-              <div class="carousel-caption">
+              <div class="carousel-caption text-left">
                 <h1>Another example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
@@ -105,7 +153,7 @@
           <div class="carousel-item">
             <img class="third-slide" src="./images/banners/clown.jpg" alt="Third slide">
             <div class="container">
-              <div class="carousel-caption text-right">
+              <div class="carousel-caption text-left">
                 <h1>One more for good measure.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
@@ -207,7 +255,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5 feat-image">
-            <img class="featurette-image img-fluid mx-auto rounded" src="https://via.placeholder.com/350x350" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto rounded" src="./images/halloweenfigure.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -224,11 +272,13 @@
         <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     </main>
-
+</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./js/index.js"></script>
+
   </body>
 </html>
