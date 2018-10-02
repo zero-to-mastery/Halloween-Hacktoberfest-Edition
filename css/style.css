@@ -21,7 +21,21 @@ body {
 	height: 140px;
 	margin-right: auto;
 	margin-left: auto;
+    transition: all 1s ease;
+
 }
+.rounded-circle-div:hover{
+	transform: rotateY(360deg);
+    transform-style: preserve-3d;
+	
+}
+.feat-image{
+	transition: transform 1s;
+}
+.feat-image:hover{
+	transform: scale(1.1);
+}
+
 
 video {
 	height: 100%;
