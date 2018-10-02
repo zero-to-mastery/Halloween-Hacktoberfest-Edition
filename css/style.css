@@ -16,8 +16,19 @@ body {
     padding:0 auto;
   background:url("../images/Spinner-1.6s-200px.gif") no-repeat center center black;
 }
-
-
+/* modal head color */
+.signup-head{
+	background-color: blue;
+	color:white;
+}
+.close span{
+	color:white;
+}
+/* vertically center modal */
+#exampleModalCenter
+{
+	color:black;
+}
 h1, h2, li, .navbar-brand{
 	font-family: 'Griffy', cursive;
 }
