@@ -21,6 +21,7 @@ body {
 h1, h2, li, .navbar-brand{
 	font-family: 'Griffy', cursive;
 }
+
 /* Improve Navbar */
 .navbar-nav {
 	width: 70%;
