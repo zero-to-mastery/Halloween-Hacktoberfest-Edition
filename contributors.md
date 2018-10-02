@@ -13,3 +13,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@sanjithpk](https://github.com/sanjithpk)
 * [@shruti49](https://github.com/shruti49)
 * [@joshbmartin](https://github.com/joshbmartin)
+* [@bbtora](https://github.com/bbtora)
