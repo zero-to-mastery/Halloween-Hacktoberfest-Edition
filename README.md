@@ -15,6 +15,12 @@ Now, once you've forked this repo and got a local version up on your computer, y
 
 Once you are done with your changes save it, and commit to your repo.
 
+You will now need to ensure that you have an upto date copy of the project (someone else may have pushed to the repo, since you cloned it). To do this you will need to sync your fork with the "upstream", you can read more about that at the following two links:
+- https://help.github.com/articles/configuring-a-remote-for-a-fork/
+- https://help.github.com/articles/syncing-a-fork/
+
+Essentially you just need to run: `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` where the link it the one you used to clone the repo.
+
 Then go to your repo and make the Pull Request, a member of the managment team will merge it when they are available.
 
 Congratulations! You're nearly done, make sure you have made 5 pull requests to qualify for your free t-shirt. You can check how many qualifying pull requests you have made at https://hacktoberfest.digitalocean.com/stats/<YOUR-GH-NAME>
