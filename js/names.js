@@ -20,8 +20,9 @@ function newName() {
   // Changes the current name with a random new one.
   // We keep rerolling until we get a "new" one (not same as current)
   var name = allNames[Math.floor(Math.random()*allNames.length)];
-  while (name == document.getElementById("name").innerHTML || name === "") name = allNames[Math.floor(Math.random()*allNames.length)];
-  document.getElementById("name").innerHTML = name;
+  while (name.substring(0, name.indexOf(":")) == document.getElementById("card-name").innerHTML || name === "") name = allNames[Math.floor(Math.random()*allNames.length)];
+  document.getElementById("card-name").innerHTML = name.substring(0, name.indexOf(":"));
+  document.getElementById("card-desc").innerHTML = name.substring(name.indexOf(":") + 1);
 }
 
 window.onload = newName;
