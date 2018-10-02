@@ -10,9 +10,6 @@ h1, h2, li, .navbar-brand{
 	font-family: 'Griffy', cursive;
 }
 
-h1{
-	text-align: left;
-}
 /* Improve Navbar */
 .navbar-nav {
 	width: 70%;
