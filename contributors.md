@@ -15,3 +15,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@joshbmartin](https://github.com/joshbmartin)
 * [@sb39](https://github.com/sb39)
 * [@bbtora](https://github.com/bbtora)
+* [@nrsalmon](https://github.com/nrsalmon)
+
