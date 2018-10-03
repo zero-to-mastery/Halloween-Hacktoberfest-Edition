@@ -32,7 +32,6 @@ function readFile(file) {
 readFile('names.txt');
 
 var allNames = allNames.split("\n");
-var tempNamesArray = [];
 
 // Took "onclick" action away from HTML button; "Separation of Concerns"
 var nameButton = document.getElementById('name-button');
@@ -53,7 +52,7 @@ newName();
 // Changes the current name with a random new one
 function newName() {
 
-  // Assign name content from allNames array using randomNameIndex
+  // Assign name content from allNames array
   while (name === prevName) {
     name = allNames[Math.floor(Math.random() * (allNames.length - 1))];
   }
