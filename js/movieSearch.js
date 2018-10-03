@@ -34,4 +34,3 @@
     }
     
     searchButton.addEventListener('click', runSearch);
-

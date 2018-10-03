@@ -14,7 +14,10 @@ body {
 	font-size: 1.3rem;
 	padding-top: 100px;
 }
-
+.main{
+	margin-top:-1%;
+}
+p{margin : 0;}
 h1, h2, .navbar-brand {
 	font-family: 'Griffy', cursive;
 }
@@ -30,6 +33,9 @@ h1, h2, .navbar-brand {
 
 /* === NavBar === */
 /* Change logo size */
+.navbar{
+	background-color:#343a40cc;
+}
 .navbar-brand img {
 	height: 60px;
 }
@@ -95,10 +101,21 @@ h1, h2, .navbar-brand {
 }
 .modal-footer {
 	/* Removes Border from footer */
-	border-top: none
+	border-top: none;
 }
-
-
+.footer{
+	background-color: #343a40cc;
+    padding: 20px 100px;
+}
+/* top-to-bottom button */
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+	display:none;
+	color:white;
+}
 
 
 
