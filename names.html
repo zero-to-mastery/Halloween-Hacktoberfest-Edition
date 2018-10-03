@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,7 +33,7 @@
 
       <a class="navbar-brand" href="index.html"><img src="images/ztm-halloween-logo.svg"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-       aria-expanded="false" aria-label="Toggle navigation">
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -77,63 +78,65 @@
   <main>
 
     <!-- Sub nav menu -->
-    <div class="submenu mx-5 mt-4">
-      <ul class="nav nav-pills nav-justified subnav">
+    <div class="container">
+      <div class="submenu mx-5">
+        <ul class="nav nav-pills nav-justified subnav">
 
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#names">Halloween Name Meanings</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#names">Halloween Name Meanings</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#gen">What's Your Halloween Name?</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#gen">What's Your Halloween Name?</a>
+          </li>
 
-      </ul>
-    </div>
+        </ul>
+      </div>
 
-    <!-- Content Boxes -->
-    <div class="">
-      <div class="tab-content m-5">
+      <!-- Content Boxes -->
+      <div class="">
+        <div class="tab-content m-5">
 
-        <!-- Name Meanings -->
-        <div id="names" class="tab-pane fade in show active">
-          <div class="card text-white bg-dark namecards">
-            <div class="row no-gutters">
-              <div class="col-auto">
-                <img src="./images/cupcake.jpg" class="img-fluid nameImg" alt="Cupcake">
-              </div>
-              <div class="col">
-                <div class="card-block px-4 py-3">
-                  <h4 class="card-title" id="card-name"></h4>
-                  <p class="name" id="card-desc"></p>
-                  <!-- Removed unneccesary "href" property that was causing page refresh issues -->
-                  <a id="name-button" class="btn">New name!</a>
+          <!-- Name Meanings -->
+          <div id="names" class="tab-pane fade in show active">
+            <div class="card text-white bg-dark namecards">
+              <div class="row no-gutters">
+                <div class="col-auto">
+                  <img src="./images/cupcake.jpg" class="img-fluid nameImg" alt="Cupcake">
+                </div>
+                <div class="col">
+                  <div class="card-block px-4 py-3">
+                    <h4 class="card-title" id="card-name"></h4>
+                    <p class="name" id="card-desc"></p>
+                    <!-- Removed unneccesary "href" property that was causing page refresh issues -->
+                    <a id="name-button" class="btn">New name!</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Name Generator -->
-        <div id="gen" class="tab-pane fade px-5 py-2 text-center">
-          <div class="">
-            <div class="center">
-              <div id="register">
-                <ion-icon id="previousButton" name="person"></ion-icon>
-                <ion-icon id="forwardButton" name="arrow-forward"></ion-icon>
+          <!-- Name Generator -->
+          <div id="gen" class="tab-pane fade px-5 py-2 text-center">
+            <div class="">
+              <div class="center">
+                <div id="register">
+                  <ion-icon id="previousButton" name="person"></ion-icon>
+                  <ion-icon id="forwardButton" name="arrow-forward"></ion-icon>
 
-                <div id="inputContainer">
-                  <input type="text" id="inputField">
-                  <label id="inputLabel"></label>
-                  <div id="inputProgress"></div>
-                  <label id="info-div">if doesn't apply press spacebar</label>
+                  <div id="inputContainer">
+                    <input type="text" id="inputField">
+                    <label id="inputLabel"></label>
+                    <div id="inputProgress"></div>
+                    <label id="info-div">if doesn't apply press spacebar</label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+
         </div>
-
-
       </div>
     </div>
 
