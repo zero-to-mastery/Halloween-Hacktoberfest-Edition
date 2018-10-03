@@ -1,4 +1,4 @@
-# Halloween - Hacktoberfest
+# Halloween - Hacktoberfest ![Level](https://img.shields.io/badge/Tech-HTML-orange.svg?longCache=true&style=for-the-badge)
 Welcome to the Halloween Hacktoberfest challenge, designed with all skill levels in mind!
 
 No matter what your skill level you can still contribute to this project. You could add some HTML, CSS, images, text content, documentation, fix typos... In short, if you see something you can add GO for it :)
