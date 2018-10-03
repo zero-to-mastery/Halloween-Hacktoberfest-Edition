@@ -1,52 +1,55 @@
 /* Names Pahe Syles */
 .subnav {
-	background-color: rgb(44, 44, 44);
+  background-color: rgb(44, 44, 44);
 }
 
-.subnav>li>a:hover {
-	background-color: rgb(255, 153, 0);
-	color: rgb(44, 44, 44)
+.subnav > li > a:hover {
+  background-color: rgb(255, 153, 0);
+  color: rgb(44, 44, 44);
 }
 
 .subnav .nav-link.active,
-.nav-pills .show>.nav-link {
-	background-color: rgb(250, 112, 0);
+.nav-pills .show > .nav-link {
+  background-color: rgb(250, 112, 0);
 }
 
 .nav-pills .nav-link {
-	border-radius: 0;
-	color: #fff;
+  border-radius: 0;
+  color: #fff;
 }
 
 #newSpin {
-	background-color: peru;
-	color: #ccc;
-	position: absolute;
-	bottom: 20px
+  background-color: peru;
+  color: #ccc;
+  position: absolute;
+  bottom: 20px;
 }
 
 .nameImg {
-	border-radius: 25px 0 0 25px;
+  border-radius: 25px 0 0 25px;
 }
 
 .namecards {
-	width: 100%;
-	float: left;
-	margin: 15px 0;
-	border: 5px solid #ccc;
-	border-radius: 25px;
-	-webkit-box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
-	-moz-box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
-	box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
-	-webkit-transition: margin 0.5s ease-out;
-	-moz-transition: margin 0.5s ease-out;
-	-o-transition: margin 0.5s ease-out;
-
+  width: 100%;
+  float: left;
+  margin: 15px 0;
+  border: 5px solid #ccc;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
+  -moz-box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
+  box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
 }
 
 .namecards:hover {
-	margin-top: 5px;
-	-webkit-box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
-	-moz-box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
-	box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
+  margin-top: 5px;
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
+  -moz-box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
+  box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
+}
+
+.submenu {
+  margin-top: 10rem;
 }
