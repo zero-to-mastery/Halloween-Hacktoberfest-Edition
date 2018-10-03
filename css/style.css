@@ -115,8 +115,11 @@ h1, h2, .navbar-brand {
 	border-top: none;
 }
 .footer{
-	background-color: #343a40cc;
-    padding: 20px 100px;
+    height: 20vh;
+    background-color: #343a40cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* top-to-bottom button */
 .back-to-top {
@@ -174,3 +177,17 @@ video {
 		margin-right:auto;
 	}
 }
+
+
+@media only screen and (max-width: 600px) {
+	.navbar-nav {
+		/* NavBars Main Styling */
+		width: 100%;
+		margin: 0!important;
+		text-align: center;
+		justify-content: center;
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+

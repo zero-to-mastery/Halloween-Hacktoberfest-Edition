@@ -24,3 +24,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@chriswaustin](https://github.com/chriswaustin)
 * [@DapperDirewolf](https://github.com/DapperDirewolf)
 * [@kudeh](https://github.com/kudeh)
+* [@James Joongho Kim](https://github.com/april9288)
