@@ -29,11 +29,14 @@
 </head>
 
 <body>
-  <div id="load"></div>
+  <!-- disabled loader until full development-->
+  <!--div id="load"></div-->
   <div id="contents">
     <header>
       <!-- NavBar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-transparent" id="navnav">
+
 
         <a class="navbar-brand" href="index.html"><img src="images/ztm-halloween-logo.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +47,7 @@
 
             <!-- Home Link -->
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html" style="color: #fff;border: 1px solid orange;">Home<span class="sr-only">(current)</span></a>
             </li>
 
             <!-- Recipes Link -->
@@ -120,7 +123,7 @@
 
     <!-- /modal for signup/-->
 
-    <main role="main">
+    <main role="main" class="main">
       <!-- Carousel -->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Markers underneath Images -->
@@ -155,17 +158,16 @@
             <img class="second-slide" src="./images/banners/pumpbanner.png" alt="Second slide">
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                  eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <h1>Pumpkin Carving Designs</h1>
+                <p>See some pumpkin carving positively ghoulish pumpkin carving designs</p>
+                <p><a class="btn btn-lg btn-primary" href="designs.html" role="button">Be Inspired</a></p>
               </div>
             </div>
           </div>
 
           <!-- Slide 3 -->
           <div class="carousel-item">
-            <img class="third-slide" src="./images/banners/clown.jpg" alt="Third slide">
+            <img class="third-slide" src="./images/banners/clownslide.png" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>One more for good measure.</h1>
@@ -288,18 +290,20 @@
       </div><!-- /.container -->
 
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+     
     </main>
+     <!-- FOOTER -->
+     <footer class="container-fluid footer" >
+      <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+    </footer>
   </div>
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
   </script>
