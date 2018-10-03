@@ -1,6 +1,6 @@
 let links = document.querySelectorAll('.nav-link');
 // let start = window.location.href.lastIndexOf('/')+1;
-// let url = window.location.href;
+let url = window.location.href;
 // console.log(url);
 links.forEach((link)=>{
 	if(link.href === url)	
