@@ -1,3 +1,9 @@
+// modal on load
+$(window).on('load',function(){
+    $('#exampleModalCenter').modal('show');
+    console.log('ready111');
+});
+
 let links = document.querySelectorAll('.nav-link');
 // let start = window.location.href.lastIndexOf('/')+1;
 let url = window.location.href;
@@ -45,6 +51,3 @@ links.forEach((link)=>{
 
 });
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
