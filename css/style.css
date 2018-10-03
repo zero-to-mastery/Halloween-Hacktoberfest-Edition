@@ -52,7 +52,7 @@ h1, h2, .navbar-brand {
 .navbar-expand-md .navbar-nav .nav-link{
 	/* Nav Links Styles */
 	font-size: 1rem;
-	color: orange;
+	color: rgba(255, 255, 255, 0.377);
 	padding: 5px 10px;
 	margin: 0 5px;
 	border: 1px solid rgba(255, 255, 255, 0.377);
