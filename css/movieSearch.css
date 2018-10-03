@@ -1,0 +1,45 @@
+.movie-search-page * {box-sizing: border-box}
+body {padding-top: 100px;}
+#activateSearch {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-color: #ccc !important;
+    font-size: 16px;
+    line-height: 1;
+}
+.searchButton {
+    border: none !important;
+    background-color: #ccc !important;
+}
+.searchButton:hover {
+    background-color: orange !important;
+}
+.movie-search-card h2 {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.movie-search-card img {
+    display: block;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.movie-search-card a {
+    display: block;
+    font-size: 16px;
+    color: white;
+    background: #ffaf00;
+    padding: 10px 15px;
+    border-radius: 0 0 5px 5px;
+}
+.movie-search-card a:hover {
+    background: #d59817;
+    text-decoration: none;
+}
+
+.movie-search-card {
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;}
