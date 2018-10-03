@@ -1,5 +1,5 @@
 .movie-search-page * {box-sizing: border-box};
-
+body {padding-top: 100px;}
 #activateSearch {
     display: inline-block;
     padding: 10px;
