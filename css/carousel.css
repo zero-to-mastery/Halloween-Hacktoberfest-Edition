@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-bottom: 3rem;
+    /*padding-bottom: 3rem; I think it should be removed because it makes extra space at the bottom of the footer which is not supposed to.*/ 
     color: #5a5a5a;
   }
   
