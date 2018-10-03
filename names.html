@@ -24,6 +24,9 @@
     <link href="./css/carousel.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
+    <!-- name converter css -->
+    <link rel="stylesheet" type="text/css" href="css/nameConverter.css">
+
   </head>
   <body>
 
@@ -108,25 +111,21 @@
 
           <!-- Name Generator -->
           <div id="gen" class="tab-pane fade px-5 py-2 text-center">
-            <h3 class="text-warning">Coming Soon</h3>
-            <p class="text-white">This will be where we ask for the first letter of user's name and their birth month and will return a result. Feel free to make this if you wish.<br> Some examples:</p>
-            <ul>
-              <li>
-                  <a href="http://jigsaw.i.lithium.com/t5/image/serverpage/image-id/13321i006713BC16062E75?v=1.0">Example 1</a>
-              </li>
+            <div class="">
+              <div class="center">
+                <div id="register"> 
+                  <ion-icon id="previousButton" name="person"></ion-icon>
+                  <ion-icon id="forwardButton" name="arrow-forward"></ion-icon>
 
-              <li>
-                  <a href="https://i.pinimg.com/originals/21/04/36/2104360a54d497e716806f83000014bc.jpg">Example 2</a>
-              </li>
-              
-              <li>
-                  <a href="https://www.mykidstime.com/wp-content/uploads/2015/10/Whats-your-Halloween-Name.jpg">Example 3</a>
-              </li>
-
-              <li>
-                  <a href="https://www.google.co.uk/search?q=what+is+your+halloween+name&rlz=1C1CHBF_en-GBGB775GB775&tbm=isch&source=iu&ictx=1&fir=kUFXFRtK0i4OMM%253A%252CBOcFHXj75zWfNM%252C_&usg=AI4_-kTmgDT2leg2DpHYGOySuNRa4mU77w&sa=X&ved=2ahUKEwiFgtCMuubdAhWCJsAKHdLxCssQ9QEwAHoECAIQBA#imgrc=_">Even More Examples</a>
-              </li>
-            </ul>
+                  <div id="inputContainer">
+                    <input id="inputField" multiple />
+                    <label id="inputLabel"></label>
+                    <div id="inputProgress"></div>
+                    <label id="info-div">if doesn't apply press spacebar</label>
+                  </div>
+                </div>
+              </div> 
+            </div>
           </div>
 
           
@@ -140,5 +139,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <!-- name converter js -->
+    <script type="text/javascript" src="js/nameConverter.js"></script>
+    <script type="text/javascript" src="js/nameContainer.js"></script>
+    <!-- icon pack -->
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
   </body>
 </html>
