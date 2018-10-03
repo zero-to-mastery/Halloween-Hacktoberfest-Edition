@@ -1,16 +1,19 @@
 //loader
-document.onreadystatechange = function () {
-    var state = document.readyState
-    if (state == 'interactive') {
-         document.getElementById('contents').style.visibility="hidden";
-    } else if (state == 'complete') {
-        setTimeout(function(){
-           document.getElementById('interactive');
-           document.getElementById('load').style.visibility="hidden";
-           document.getElementById('contents').style.visibility="visible";
-        },3000);
-    }
-  }
+// document.ready = function () {
+
+  // Commented out this entire top area because it seemed to be doing nothing, throwing errors in console, and causing the script to run multiple times.
+
+  //   var state = document.readyState
+  //   if (state == 'interactive') {
+  //        document.getElementById('contents').style.visibility="hidden";
+  //   } else if (state == 'complete') {
+  //       setTimeout(function(){
+  //          document.getElementById('interactive');
+  //          document.getElementById('load').style.visibility="hidden";
+  //          document.getElementById('contents').style.visibility="visible";
+  //       },3000);
+  //   }
+  // }
 // LOADER-----
 
 var allFacts;
@@ -31,12 +34,28 @@ function readFile(file) {
 readFile('facts.txt');
 allFacts = allFacts.split("\n");
 
-function newFact() {
-  // Changes the current fact with a random new one.
-  // We keep rerolling until we get a "new" one (not same as current)
-  var fact = allFacts[Math.floor(Math.random()*allFacts.length)];
-  while (fact == document.getElementById("fact").innerHTML || fact === "") fact = allFacts[Math.floor(Math.random()*allFacts.length)];
-  document.getElementById("fact").innerHTML = fact;
-}
+// Took "onclick" action away from HTML button; "Separation of Concerns"
+var factButton = document.getElementById('fact-button');
+factButton.addEventListener('click', newFact);
 
-window.onload = newFact;
+var factText = document.getElementById("fact");
+
+// Initialise fact text variables
+var fact = "";
+var prevFact = "";
+
+newFact();
+
+// Changes the current fact with a random new one
+function newFact() {
+
+  while (fact === prevFact) {
+    fact = allFacts[Math.floor(Math.random() * (allFacts.length - 1))];
+  }
+  // Then record the last fact we successfully generated
+  prevFact = fact;
+
+  // DOM text assignment changed from use of 'innerHTML' to avoid "bad practice"
+  factText.textContent = fact;
+}
+// }
