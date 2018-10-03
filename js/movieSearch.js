@@ -3,9 +3,17 @@
     let searchWord = document.getElementById('searchMovie').value;
     let totalResults = document.getElementById('totalResults');
     
+    const handleErrors = (response) => {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        return response;
+    }
+
     let runSearch = (e) => {
         e.preventDefault();
         fetch(`//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=${searchWord}`)
+        .then(handleErrors)
         .then(res => res.json())
         .then(movies => {
             console.log(movies);
@@ -26,3 +34,4 @@
     }
     
     searchButton.addEventListener('click', runSearch);
+
