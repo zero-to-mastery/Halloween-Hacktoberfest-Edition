@@ -57,13 +57,18 @@ document.getElementById("myNav").innerHTML =
 
             
             '<li class="nav-item">' +
-              '<a class="nav-link" href="names.html">Names</a>' +
+                '<a class="nav-link" href="names.html">Names</a>' +
             '</li>' +
             
             
             '<li class="nav-item">' +
                 '<a class="nav-link" href="halloweenMovies.html">Movies</a>' +
-              '</li>' +
+            '</li>' +
+
+            '<!-- Books Link -->' +
+            '<li class="nav-item">' +
+                '<a class="nav-link" href="halloweenBooks.html">Books</a>' +
+            '</li>' +
 
           '</ul>'+
         '</div>' +
