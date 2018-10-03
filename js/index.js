@@ -51,6 +51,3 @@ links.forEach((link)=>{
 
 });
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
