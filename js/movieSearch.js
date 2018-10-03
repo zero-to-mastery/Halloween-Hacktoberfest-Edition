@@ -1,6 +1,6 @@
     const searchButton = document.getElementById('activateSearch');
     const movieBox = document.getElementById('movies');
-    let searchWord = document.getElementById('searchMovie').value;
+    let searchWord = document.getElementById("searchMovie").value;
     let totalResults = document.getElementById('totalResults');
     
     const handleErrors = (response) => {
@@ -12,7 +12,7 @@
 
     let runSearch = (e) => {
         e.preventDefault();
-        fetch(`//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=${searchWord}`)
+        fetch('//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=' + searchWord)
         .then(handleErrors)
         .then(res => res.json())
         .then(movies => {
