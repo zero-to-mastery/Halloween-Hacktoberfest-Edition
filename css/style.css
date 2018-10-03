@@ -11,6 +11,7 @@ body {
 	background-color: #1e1e1e;
 	color: white;
 	font-size: 1.3rem;
+	padding-top:100px;
 }
 .main{
 	margin-top:-1%;
@@ -31,6 +32,7 @@ h1, h2, .navbar-brand {
 	border: 1.5px solid rgba(226, 226, 226, 0.815)
 }
 
+
 /* === NavBar === */
 /* Change logo size */
 
@@ -42,10 +44,12 @@ h1, h2, .navbar-brand {
     padding-top: 20px!important;
 }
 
-
-.navbar{
+/*I COMMENTED OUT THE NAVBAR COULOUR AS IT OVERRIDES THE TRANSPARENCY ON THE HOME PAGE. 
+CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
+*/
+/*.navbar{
 	background-color:#343a40cc;
-}
+}*/
 
 .navbar-brand img {
 	height: 60px;
@@ -54,7 +58,7 @@ h1, h2, .navbar-brand {
 .navbar-nav {
 	/* NavBars Main Styling */
 	width: 80%;
-	margin: 0px -4rem 0 auto !important;
+/*	margin: 0px -4rem 0 auto !important;*/
 	text-align: center;
 	justify-content: center;
 	grid-template-columns: repeat(5, 1fr);
@@ -115,8 +119,11 @@ h1, h2, .navbar-brand {
 	border-top: none;
 }
 .footer{
-	background-color: #343a40cc;
-    padding: 20px 100px;
+    height: 20vh;
+    background-color: #343a40cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* top-to-bottom button */
 .back-to-top {
@@ -167,3 +174,24 @@ video {
 .footer-link {
 	color: orange;
 }
+
+@media (max-width:768px)
+{
+	.navbar-nav.ml-auto{
+		margin-right:auto;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.navbar-nav {
+		/* NavBars Main Styling */
+		width: 100%;
+		margin: 0!important;
+		text-align: center;
+		justify-content: center;
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+
