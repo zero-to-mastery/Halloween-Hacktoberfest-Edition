@@ -21,3 +21,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@pavelisp](https://github.com/pavelisp)
 * [@Nilkamal](https://github.com/nilkamal)
 * [@chriswaustin](https://github.com/chriswaustin)
+* [@DapperDirewolf](https://github.com/DapperDirewolf)
