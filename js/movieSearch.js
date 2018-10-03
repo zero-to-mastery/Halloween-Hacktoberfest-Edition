@@ -12,7 +12,8 @@
 
     let runSearch = (e) => {
         e.preventDefault();
-        fetch('//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=' + searchWord)
+        let searchWord = document.getElementById("searchMovie").value;
+        fetch(`//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=${searchWord}`)
         .then(handleErrors)
         .then(res => res.json())
         .then(movies => {
