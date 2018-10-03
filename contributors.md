@@ -23,3 +23,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@Nilkamal](https://github.com/nilkamal)
 * [@chriswaustin](https://github.com/chriswaustin)
 * [@DapperDirewolf](https://github.com/DapperDirewolf)
+* [@kudeh](https://github.com/kudeh)
