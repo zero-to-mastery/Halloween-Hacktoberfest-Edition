@@ -16,14 +16,14 @@
         .then(handleErrors)
         .then(res => res.json())
         .then(movies => {
-        totalResults.innerText = movies.totalResults;
         movieBox.innerHTML = "";
         movies.Search.forEach((movie)=>{
             let {Title, Poster, imdbID} = movie;
+            if(Poster == "N/A"){Poster = "./images/noPoster.png"};
             movieBox.innerHTML += 
             `
-            <div>
-            <h1>${Title}</h1>
+            <div class="col-md-3 movie-search-card">
+            <h2>${Title}</h2>
             <img src="${Poster}" alt="${Title}"/>
             <a target="_blank" href="https://www.imdb.com/title/${imdbID}">View on IMDB</a>
             </div>
