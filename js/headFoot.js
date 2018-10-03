@@ -1,3 +1,8 @@
+// This could probably do with some optimising, feel free to do so
+// But please check everything works after. Some things I wanted to
+// Remove broke one or more pages.
+
+
 // Show whether the nav/footer is being dynamically loaded on each page.
 console.log("Header and nav have been dynamically loaded")
 
@@ -25,58 +30,49 @@ document.getElementById('head').innerHTML =
 // Loads and implants the NavBar
 document.getElementById("myNav").innerHTML =
 
-    '<header>' +
-        '<nav class="navbar navbar-expand-md navbar-dark fixed-top">' +
+  '<header>' +
+      '<nav class="navbar navbar-expand-md navbar-dark fixed-top">' +
 
-        
+      '<a class="navbar-brand" href="index.html"><img src="images/ztm-halloween-logo.svg"/></a>' +
+      '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">' +
+        '<span class="navbar-toggler-icon"></span>' +
+      '</button>' +
+      '<div class="collapse navbar-collapse" id="navbarCollapse">' +
+        '<ul class="navbar-nav mr-auto" id="linsks">' +
 
-        '<a class="navbar-brand" href="index.html"><img src="images/ztm-halloween-logo.svg"/></a>' +
-        '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">' +
-          '<span class="navbar-toggler-icon"></span>' +
-        '</button>' +
-        '<div class="collapse navbar-collapse" id="navbarCollapse">' +
-          '<ul class="navbar-nav mr-auto" id="linsks">' +
+          '<li class="nav-item">' +
+            '<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>' +
+          '</li>' +
 
+          '<li class="nav-item">' +
+            '<a class="nav-link" href="recipes.html">Recipes</a>' +
+          '</li>' +
+
+          '<li class="nav-item">' +
+            '<a class="nav-link" href="facts.html">Facts</a>' +
+          '</li>' +
+
+          '<li class="nav-item">' +
+            '<a class="nav-link" href="designs.html">Pumpkin Designs</a>' +
+          '</li>' +
+
+          '<li class="nav-item">' +
+              '<a class="nav-link" href="names.html">Names</a>' +
+          '</li>' +
           
-            
-            '<li class="nav-item">' +
-              '<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>' +
-            '</li>' +
+          '<li class="nav-item">' +
+              '<a class="nav-link" href="halloweenMovies.html">Movies</a>' +
+          '</li>' +
 
-            
-            '<li class="nav-item">' +
-              '<a class="nav-link" href="recipes.html">Recipes</a>' +
-            '</li>' +
+          '<!-- Books Link -->' +
+          '<li class="nav-item">' +
+              '<a class="nav-link" href="halloweenBooks.html">Books</a>' +
+          '</li>' +
 
-            
-            '<li class="nav-item">' +
-              '<a class="nav-link" href="facts.html">Facts</a>' +
-            '</li>' +
-
-            
-            '<li class="nav-item">' +
-              '<a class="nav-link" href="designs.html">Pumpkin Designs</a>' +
-            '</li>' +
-
-            
-            '<li class="nav-item">' +
-                '<a class="nav-link" href="names.html">Names</a>' +
-            '</li>' +
-            
-            
-            '<li class="nav-item">' +
-                '<a class="nav-link" href="halloweenMovies.html">Movies</a>' +
-            '</li>' +
-
-            '<!-- Books Link -->' +
-            '<li class="nav-item">' +
-                '<a class="nav-link" href="halloweenBooks.html">Books</a>' +
-            '</li>' +
-
-          '</ul>'+
-        '</div>' +
-      '</nav>' +
-    '</header>' 
+        '</ul>'+
+      '</div>' +
+    '</nav>' +
+  '</header>' 
 
 // Set the active link on the NavBar
 let links = document.querySelectorAll('.nav-link');
@@ -95,11 +91,11 @@ links.forEach((link)=>{
 // mfContents gets the contents of the element, so we can add them back in
 let mfContents = document.getElementById("myFoot").innerHTML;
 document.getElementById("myFoot").innerHTML =
-    '<footer class="container-fluid footer" >' +
-        '<p>&copy; 2017-2018 Zero To Mastery Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>' +
-        '<a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fas fa-arrow-circle-up fa-2x"></i></a>' +
-        mfContents +
-    '</footer>'
+  '<footer class="container-fluid footer" >' +
+      '<p>&copy; 2017-2018 Zero To Mastery Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>' +
+      '<a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fas fa-arrow-circle-up fa-2x"></i></a>' +
+      mfContents +
+  '</footer>'
 
   
 // Load and implant the End of Body Scripts
