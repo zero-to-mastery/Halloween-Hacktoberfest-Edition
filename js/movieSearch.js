@@ -1,8 +1,7 @@
     const searchButton = document.getElementById('activateSearch');
     const movieBox = document.getElementById('movies');
-    let searchWord = document.getElementById("searchMovie").value;
     let totalResults = document.getElementById('totalResults');
-    
+    let searchWord = document.getElementById("searchMovie");
     const handleErrors = (response) => {
         if (!response.ok) {
             throw Error(response.statusText);
@@ -11,13 +10,14 @@
     }
 
     let runSearch = (e) => {
-        e.preventDefault();
-        fetch('//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=' + searchWord + '')
+        if(e){e.preventDefault();}
+        let searchQuery = document.getElementById("searchMovie").value;
+        fetch(`//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=${searchQuery}`)
         .then(handleErrors)
         .then(res => res.json())
         .then(movies => {
-            console.log(movies);
         totalResults.innerText = movies.totalResults;
+        movieBox.innerHTML = "";
         movies.Search.forEach((movie)=>{
             let {Title, Poster, imdbID} = movie;
             movieBox.innerHTML += 
@@ -34,4 +34,10 @@
     }
     
     searchButton.addEventListener('click', runSearch);
+    searchWord.addEventListener('keyup', (e) => {
+        if (e.keyCode == 13) {
+            console.log('works');
+            runSearch();
+        }
+    });
 
