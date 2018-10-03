@@ -53,10 +53,7 @@ h1, h2, .navbar-brand {
 /* Improve Navbar */
 .navbar-nav {
 	/* NavBars Main Styling */
-	width: 80%;
-	margin: 0px -4rem 0 auto !important;
 	text-align: center;
-	justify-content: center;
 	grid-template-columns: repeat(5, 1fr);
 }
 .navbar-expand-md .navbar-nav .nav-link{
@@ -76,6 +73,14 @@ h1, h2, .navbar-brand {
 	margin: 0 5px;
 	border: 1px solid rgba(226, 137, 3, 0.377);
 	border-radius: 5px;
+}
+@media (min-width: 768px){
+	.navbar-expand-md .navbar-nav {
+		width: 100%;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
 	/* Active (Current Page) Styling */
