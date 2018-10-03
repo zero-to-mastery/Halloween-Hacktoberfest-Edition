@@ -153,3 +153,6 @@ video {
 	pointer-events: none;
 }
 
+.footer-link {
+	color: orange;
+}
