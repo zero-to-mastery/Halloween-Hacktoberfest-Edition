@@ -1,4 +1,4 @@
-# Halloween - Hacktoberfest
+# Halloween - Hacktoberfest ![Level](https://img.shields.io/badge/Tech-HTML-orange.svg?longCache=true&style=for-the-badge)
 Welcome to the Halloween Hacktoberfest challenge, designed with all skill levels in mind!
 
 No matter what your skill level you can still contribute to this project. You could add some HTML, CSS, images, text content, documentation, fix typos... In short, if you see something you can add GO for it :)
@@ -14,6 +14,12 @@ If you've never forked a repository or made a pull request before, we recommend 
 Now, once you've forked this repo and got a local version up on your computer, you are ready to add to the project in any way you see fit.
 
 Once you are done with your changes save it, and commit to your repo.
+
+You will now need to ensure that you have an upto date copy of the project (someone else may have pushed to the repo, since you cloned it). To do this you will need to sync your fork with the "upstream", you can read more about that at the following two links:
+- https://help.github.com/articles/configuring-a-remote-for-a-fork/
+- https://help.github.com/articles/syncing-a-fork/
+
+Essentially you just need to run: `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` where the link it the one you used to clone the repo.
 
 Then go to your repo and make the Pull Request, a member of the managment team will merge it when they are available.
 
