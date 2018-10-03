@@ -22,11 +22,13 @@
     <link href="./css/carousel.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
+    <!-- Formatting for movie search cards -->
+    <link rel="stylesheet" href="./css/movieSearch.css">
   </head>
   <body>
 
     <header>
-			<!-- NavBar -->
+<!-- NavBar -->
 			<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 
 				<a class="navbar-brand" href="index.html"><img src="images/ztm-halloween-logo.svg"></a>
@@ -71,12 +73,19 @@
 				</div>
 			</nav>
 		</header>
-<div class="container">
-    <div class="search-bar">
-        <input id="searchMovie" type="text"><a id="activateSearch" href="#">SEARCH</a>
+<div class="container movies-search-page">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="input-group mb-3">
+            <input id="searchMovie" type="text" class="form-control" placeholder="Keyword to look for" aria-label="Movie keyword" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn searchButton" type="button" id="activateSearch">Search for a movie</button>
+            </div>
+          </div>
     </div>
-    <p># of Movies: <span id="totalResults"></span></p>
-    <div id="movies">
+    <div class="col-3"></div></div>
+    <div class="row" id="movies">
         
     </div>
 </div>
