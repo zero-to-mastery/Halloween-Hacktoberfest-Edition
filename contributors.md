@@ -5,3 +5,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@MattCSmith](https://github.com/mattcsmith)
 * [@thisisabdus](https://github.com/thisisabdus)
 * [@winnie334](https://github.com/winnie334)
+* [@jcothard](https://github.com/jcothard)
