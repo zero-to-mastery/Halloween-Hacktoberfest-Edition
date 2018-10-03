@@ -86,6 +86,10 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
 	border: 1px solid orange;
 }
 
+.navbar-toggler-icon {
+    color: #fff;
+}
+
 /* === Loading Spinner === */
 #load {
 	width: 100%;
