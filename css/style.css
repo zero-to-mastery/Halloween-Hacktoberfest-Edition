@@ -54,7 +54,7 @@ h1, h2, .navbar-brand {
 .navbar-nav {
 	/* NavBars Main Styling */
 	width: 80%;
-	margin: 0px -4rem 0 auto !important;
+/*	margin: 0px -4rem 0 auto !important;*/
 	text-align: center;
 	justify-content: center;
 	grid-template-columns: repeat(5, 1fr);
@@ -171,6 +171,12 @@ video {
 	color: orange;
 }
 
+@media (max-width:768px)
+{
+	.navbar-nav.ml-auto{
+		margin-right:auto;
+	}
+}
 
 
 @media only screen and (max-width: 600px) {
