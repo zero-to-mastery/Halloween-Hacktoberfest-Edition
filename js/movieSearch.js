@@ -12,7 +12,7 @@
 
     let runSearch = (e) => {
         e.preventDefault();
-        fetch('//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=' + searchWord)
+        fetch('//www.omdbapi.com/?apikey=def802d7&type=movie&plot=short&s=' + searchWord + '')
         .then(handleErrors)
         .then(res => res.json())
         .then(movies => {
