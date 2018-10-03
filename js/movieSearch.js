@@ -1,4 +1,3 @@
-<script>
     const searchButton = document.getElementById('activateSearch');
     const movieBox = document.getElementById('movies');
     let searchWord = document.getElementById('searchMovie').value;
@@ -27,4 +26,3 @@
     }
     
     searchButton.addEventListener('click', runSearch);
-</script>
