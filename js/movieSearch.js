@@ -1,6 +1,5 @@
     const searchButton = document.getElementById('activateSearch');
     const movieBox = document.getElementById('movies');
-    let searchWord = document.getElementById("searchMovie").value;
     let totalResults = document.getElementById('totalResults');
     
     const handleErrors = (response) => {
