@@ -33,6 +33,9 @@ h1, h2, li, .navbar-brand{
 	font-family: 'Griffy', cursive;
 }
 
+/* Change logo size */
+.navbar-brand img {height: 60px;}
+
 /* Improve Navbar */
 .navbar-nav {
 	width: 70%;
