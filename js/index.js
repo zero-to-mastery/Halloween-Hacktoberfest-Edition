@@ -1,7 +1,7 @@
 // modal on load
 $(window).on('load',function(){
     $('#exampleModalCenter').modal('show');
-    console.log('ready111');
+    //console.log('ready111');
 });
 
 let links = document.querySelectorAll('.nav-link');
@@ -50,4 +50,6 @@ links.forEach((link)=>{
        $('#back-to-top').tooltip('show');
 
 });
+
+
 
