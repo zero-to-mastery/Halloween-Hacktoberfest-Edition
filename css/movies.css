@@ -5,17 +5,19 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+ #myCarousel {
+    width:100%!important;
+ }
+
 /* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
+.movieCarousel {
+  
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -40,6 +42,10 @@ body {
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
+
+.movieListContainer{
+  margin-top: 5rem;
+}
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
