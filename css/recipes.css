@@ -1,0 +1,111 @@
+.recipes{
+    background-image: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 255, 255, 0.158)),url('../images/recipeback.jpeg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    margin-top: 2em;
+    font-size: 4em;
+   
+    color: black;
+
+}
+
+.ba {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.b--black-05 {
+    border-color: rgba(0, 0, 0, .05);
+}
+
+.br3 {
+    border-radius: .5rem;
+}
+
+.br-100 {
+    border-radius: 100%;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.fw4 {
+    font-weight: 400;
+}
+
+.h4 {
+    height: 8rem;
+}
+
+.w4 {
+    width: 8rem;
+}
+
+.gray {
+    color: black;
+}
+
+.pb4{
+    padding-bottom: 4em;
+}
+.bg-white {
+    background-color: #fff;
+}
+
+.pa2 {
+    padding: .5rem;
+}
+
+.pa3 {
+    padding: 1rem;
+}
+
+.mb2 {
+    margin-bottom: .5rem;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mv3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mt6{
+    margin-top: 6em;
+}
+.tc {
+    text-align: center;
+}
+
+.f3 {
+    font-size: 1.5rem;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 30em) {
+    .pa4-ns {
+        padding: 2rem;
+    }
+}
