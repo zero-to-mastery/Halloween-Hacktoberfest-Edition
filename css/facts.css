@@ -13,10 +13,13 @@ body {
 
 #fact{
     color: white;
-    font-size: 3em;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 2.3em;
 }
 
 .factdata{
     margin-top: 5em;
     margin-bottom: 6em;
 }
+
