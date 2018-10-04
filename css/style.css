@@ -158,6 +158,10 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
     justify-content: center;
 }
 
+.footer a {
+    color: orange;
+}
+
 
 /* top-to-bottom button */
 
