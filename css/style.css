@@ -102,6 +102,10 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
     border-radius: 5px;
 }
 
+.navbar-toggler-icon {
+    color: #fff;
+}
+
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
@@ -229,3 +233,39 @@ video {
         grid-template-columns: repeat(5, 1fr);
     }
 }
+/* border for movies page: random movie selector */
+.randMovieDiv{
+    border-top: 3px dotted rgb(175, 105, 105);
+    border-bottom: 3px dotted rgb(175, 105, 105);
+    box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0  #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+    margin-bottom: 1px;
+  }
+/* Add spinning loading circle to halloweenMovies */
+  .loader {
+    border: 16px solid #494445;
+    border-radius: 50%;
+    border-top: 16px solid #9e6073;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#questionMovie{
+    color: rgb(145, 45, 145);
+}
+
+#randomMovie{
+    text-align: center; 
+    color: rgba(255, 0, 0, 0.753);
+}
+

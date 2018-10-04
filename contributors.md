@@ -25,6 +25,9 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@DapperDirewolf](https://github.com/DapperDirewolf)
 * [@kudeh](https://github.com/kudeh)
 * [@Raineldn](https://github.com/Raineldn)
+* [@m2paulc](http://github.com/m2paulc)
 * [@James Joongho Kim](https://github.com/april9288)
 * [@sunitasen](https://github.com/sunitasen)
+* [@Dhaval1403](https://github.com/Dhaval1403)
 * [@bilalyounso](https://github.com/bilalyounso)
+
