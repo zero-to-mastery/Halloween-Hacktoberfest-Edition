@@ -36,7 +36,7 @@ const onComplete = () => {
         h1.appendChild(document.createTextNode('Hellllloooooo! ' + hName));
     } else {
         hName += fName[firstName[0].toLowerCase()] + " " + mName[midName[0].toLowerCase()] + " " + lName[lastName[0].toLowerCase()];
-        h1.appendChild(document.createTextNode('Hellllloooooo! ' + hName + " !! Happy Halloweens"));
+        h1.appendChild(document.createTextNode('Hellllloooooo! ' + hName + " !! Happy Halloween"));
     }
 
     setTimeout(function() {
