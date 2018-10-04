@@ -1,21 +1,3 @@
-//loader
-// document.ready = function () {
-
-  // Commented out this entire top area because it seemed to be doing nothing, throwing errors in console, and causing the script to run multiple times.
-
-  //   var state = document.readyState
-  //   if (state == 'interactive') {
-  //        document.getElementById('contents').style.visibility="hidden";
-  //   } else if (state == 'complete') {
-  //       setTimeout(function(){
-  //          document.getElementById('interactive');
-  //          document.getElementById('load').style.visibility="hidden";
-  //          document.getElementById('contents').style.visibility="visible";
-  //       },3000);
-  //   }
-  // }
-// LOADER-----
-
 var allFacts;
 
 function readFile(file) {

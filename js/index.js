@@ -51,6 +51,3 @@ links.forEach((link)=>{
        $('#back-to-top').tooltip('show');
 
 });
-
-
-
