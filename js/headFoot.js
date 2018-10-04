@@ -113,3 +113,10 @@ document.getElementById("endScripts").innerHTML =
     '<script src="./js/global.js"></script>' +
     esContents
 
+//Add color to navbar on scroll and remove color when back to top.
+document.addEventListener('scroll', () => {
+  document.querySelector('.navbar').classList.add('navbar-scroll');
+  if (window.scrollY === 0) {
+      document.querySelector('.navbar').classList.remove('navbar-scroll');
+  }
+})
