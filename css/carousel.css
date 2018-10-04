@@ -26,6 +26,12 @@ body {
     height: 45rem;
     background-color: #777;
   }
+  .carousel-item:nth-child(3){
+    background: no-repeat center/cover url("../images/banners/clown.jpg");
+  }
+  .carousel-item:nth-child(2){
+    background: no-repeat bottom center/cover url("../images/banners/pumpbanner.png");
+  }
   .carousel-item > img {
     position: absolute;
     top: 0;
