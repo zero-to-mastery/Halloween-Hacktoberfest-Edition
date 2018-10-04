@@ -42,3 +42,10 @@ function stopShuffle(){
 stopText = elem.innerHTML = "";
 var tmer = setInterval(() => change(), 500);
 setTimeout(() => { clearInterval(tmer); stopShuffle();},randNo);
+// Loading cirle 
+var loadingCircle = document.getElementById("loadCircle");
+var pumpkinImage = document.getElementById("imagePumpkin");
+setTimeout(function(){
+    loadingCircle.style.display = "none";
+    pumpkinImage.style.display = "block";
+}, randNo);
