@@ -1,7 +1,11 @@
 h1 {
-	font-family: 'Muli', sans-serif;
+  font-family: 'Muli', sans-serif;
+}
+
+#bookList {
+  margin: 50px 0;
 }
 
 #exorcist {
-	padding-top: 40%;
+  padding-top: 40%;
 }
