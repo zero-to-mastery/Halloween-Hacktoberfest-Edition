@@ -102,6 +102,10 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
     border-radius: 5px;
 }
 
+.navbar-toggler-icon {
+    color: #fff;
+}
+
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
