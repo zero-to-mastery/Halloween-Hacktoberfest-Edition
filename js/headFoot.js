@@ -81,11 +81,15 @@ let url = window.location.href;
 console.log("Url of the page", url);
 links.forEach((link)=>{
 	if(link.href === url)	
-		link.parentElement.classList.add('active');
+    link.parentElement.classList.add('active');
+  else if (link.href.endsWith("index.html") && url.endsWith('/'))
+    link.parentElement.classList.add('active');
 	else 
 		link.parentElement.classList.remove('active');
 })
 
+if (url.endsWith('/')) 
+  console.log('ok');
 
 // Loads and implants the Footer
 // mfContents gets the contents of the element, so we can add them back in
