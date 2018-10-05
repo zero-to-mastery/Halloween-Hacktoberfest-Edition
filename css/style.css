@@ -22,6 +22,7 @@ body {
 
 p {
   margin: 0;
+  font-size: .75rem;
 }
 
 h1,
@@ -153,8 +154,13 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
   justify-content: center;
 }
 
+.wiki-links a{
+  padding-top: 1rem;
+}
+
 .footer a {
   color: orange;
+  
 }
 
 /* top-to-bottom button */

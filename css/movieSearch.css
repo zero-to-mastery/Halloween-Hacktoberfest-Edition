@@ -28,8 +28,8 @@ body {padding-top: 100px;}
 }
 .movie-search-card a {
     display: block;
-    font-size: 16px;
-    color: white;
+    font-size: 4rem;
+    color: yellow;
     background: #ffaf00;
     padding: 10px 15px;
     border-radius: 0 0 5px 5px;
