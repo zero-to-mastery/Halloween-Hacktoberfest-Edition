@@ -1,21 +1,25 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
+
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+ #myCarousel {
+    width:100%!important;
+ }
+
 /* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
+.movieCarousel {
+  
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -27,6 +31,7 @@ body {
   height: 32rem;
   background-color: #777;
 }
+
 .carousel-item > img {
   position: absolute;
   top: 0;
@@ -35,23 +40,27 @@ body {
   height: 32rem;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
+
+.movieListContainer{
+  margin-top: 5rem;
+}
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: 400;
 }
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
 
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
 
 /* Featurettes
 ------------------------- */
@@ -64,9 +73,8 @@ body {
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -89,9 +97,11 @@ body {
     margin-top: 7rem;
   }
 }
-.randMovieDiv{
+
+.randMovieDiv {
   border-top: 3px dotted rgb(175, 105, 105);
   border-bottom: 3px dotted rgb(175, 105, 105);
-  box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0  #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+  box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000,
+    0 -1px 0 0 #000;
   margin-bottom: 1px;
 }

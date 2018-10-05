@@ -36,13 +36,28 @@ const onComplete = () => {
         h1.appendChild(document.createTextNode('Hellllloooooo! ' + hName));
     } else {
         hName += fName[firstName[0].toLowerCase()] + " " + mName[midName[0].toLowerCase()] + " " + lName[lastName[0].toLowerCase()];
-        h1.appendChild(document.createTextNode('Hellllloooooo! ' + hName + " !! Happy Halloweens"));
+        h1.appendChild(document.createTextNode('Hellllloooooo! ' + hName + " !! Happy Halloween"));
     }
 
     setTimeout(function() {
       register.parentElement.appendChild(h1)
       setTimeout(function() { h1.style.opacity = 1 }, 50)
     }, 1000);
+
+    //audio booooooooo
+    const hello = document.getElementById("hello");
+
+    if (hello.duration > 0 && !hello.paused) {
+
+        hello.pause();
+        hello.currentTime = 0;
+        hello.play();
+
+    } else {
+
+        hello.play();
+
+    }
 
     isFinished = true;
 
@@ -189,7 +204,23 @@ const onComplete = () => {
             setTimeout(transform, tTime * i, (i % 2 * 2 - 1) * 20, 0);
             setTimeout(transform, tTime * 6, 0, 0);
             setTimeout(callback, tTime * 7);
-    }
+        }
+
+        //who's knocking
+        const whosKnocking = document.getElementById("knock");
+
+        if (whosKnocking.duration > 0 && !whosKnocking.paused) {
+
+            whosKnocking.pause();
+            whosKnocking.currentTime = 0;
+            whosKnocking.play();
+
+        } else {
+
+            whosKnocking.play();
+
+        }
+
     }
 
 }(questions, onComplete))
