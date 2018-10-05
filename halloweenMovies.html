@@ -15,102 +15,26 @@
 
   <main role="main">
 
-    <!-- Carousel -->
-    <div class="container">
-      <div class="row">
-          <div id="myCarousel" class="carousel slide movieCarousel" data-ride="carousel">
-            <!-- Markers underneath Images -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Slide 1 -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="second-slide" src="https://54below.com/app/uploads/NightmareXmas-1.jpg" alt="first slide">
-                <div class="container">
-                  <div class="carousel-caption text-left">
-                    <h1>Nighmare Before Christmas</h1>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <img class="second-slide" src="https://studybreaks.com/wp-content/uploads/2018/06/the-addams-family.jpg"
-                  alt="Second slide">
-                <div class="container">
-                  <div class="carousel-caption text-left">
-                    <h1>Adams Family</h1>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 3 -->
-              <div class="carousel-item">
-                <img class="third-slide" src="http://3.bp.blogspot.com/-aysskKNKu0s/TreMi5LbmtI/AAAAAAAAAPg/g9_-YieGXCw/s1600/coraline-wallpaper.jpg"
-                  alt="Third slide">
-                <div class="container">
-                  <div class="carousel-caption text-left">
-                    <h1>Coraline</h1>
-                  </div>
-                </div>
+    <hr />
+    <div class="row">
+      <div class="container">
+        <div class="col-12">
+          <h1 id="movieTitle">Halloween Movies</h1>
+          <div class="card-columns" id="movieCards"></div>
+        </div>
+        <div class="col">
+            <div class="randMovieDiv">
+              <h2 id="questionMovie">Which Halloween movie should you see tonight?</h2>
+              <div class="row">
+                <div class="loader" id="loadCircle"></div>
+                <div id="imagePumpkin" style="display: none;"><img src="https://i.pinimg.com/originals/77/d9/4d/77d94d850efa36d3c9d10e0543b33fc6.png" height="50" width="50" /></div>
+                <div id="randomMovie"></div>
               </div>
             </div>
           </div>
-
-        <!-- Carousel Nav Buttons (Left and Right) -->
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <div class="col-8 movieListContainer">
-        <div id="movieList">
-          <div class="container">
-
-            <h2>Halloween Movies</h2>
-            <ul>
-              <li><a href="https://www.imdb.com/title/tt0101272/" target="_blank">Adams Family</a></li>
-              <li><a href="https://www.imdb.com/title/tt0094721/" target="_blank">Beetlejuice</a></li>
-              <li><a href="https://www.imdb.com/title/tt0112642/" target="_blank">Casper</a></li>
-              <li><a href="https://www.imdb.com/title/tt0327597/" target="_blank">Coraline</a></li>
-              <li><a href="https://www.imdb.com/title/tt0121164/" target="_blank">Corpse Bride</a></li>
-              <li><a href="https://www.imdb.com/title/tt0077651/" target="_blank">Halloween (1978)</a> / <a href="https://www.imdb.com/title/tt1502407/" target="_blank">(2018)</a></li>
-              <li><a href="https://www.imdb.com/title/tt3875444/" target="_blank">Haunted Mansion</a></li>
-              <li><a href="https://www.imdb.com/title/tt0107120/" target="_blank">Hocus Pocus</a></li>
-              <li><a href="https://www.imdb.com/title/tt0119345/" target="_blank">I Know What You Did Last Summer</a></li>
-              <li><a href="https://www.imdb.com/title/tt0110148/" target="_blank">Interview with the Vampire</a></li>
-              <li><a href="https://www.imdb.com/title/tt0385880/" target="_blank">Monster House</a></li>
-              <li><a href="https://www.imdb.com/title/tt0107688/" target="_blank">Nightmare Before Christmas</a></li>
-              <li><a href="https://www.imdb.com/title/tt0117571/" target="_blank">Scream</a></li>
-              <li><a href="https://www.imdb.com/title/tt0081505/" target="_blank">The Shining</a></li>
-              <li><a href="https://www.imdb.com/title/tt0862856/" target="_blank">Trick or Treat</a></li>
-              <li><a href="https://www.imdb.com/title/tt0363547/" target="_blank">Dawn of the Dead (2004)</a></li>
-            </ul>
-
-          </div>
-        </div>
-        <hr />
-
-      </div>
-      <div class="randMovieDiv col-12">
-        <h2 id="questionMovie">Which Halloween movie should you see tonight?</h2>
-        <div class="row">
-          <div class="loader" id="loadCircle"></div>
-          <div id="imagePumpkin" style="display: none;"><img src="https://i.pinimg.com/originals/77/d9/4d/77d94d850efa36d3c9d10e0543b33fc6.png"
-              height="50" width="50" /></div>
-          <div id="randomMovie"></div>
-        </div>
       </div>
     </div>
+
   </main>
 
 

@@ -105,3 +105,12 @@ body {
     0 -1px 0 0 #000;
   margin-bottom: 1px;
 }
+
+#movieTitle{
+  color: rgba(65, 65, 184, 0.74);
+  text-align: center;
+}
+
+#randomMovie{
+  text-align: center;
+}
