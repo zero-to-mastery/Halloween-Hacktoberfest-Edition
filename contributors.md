@@ -31,4 +31,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@Dhaval1403](https://github.com/Dhaval1403)
 * [@bilalyounso](https://github.com/bilalyounso)
 * [@DmitryVdovichencko](https://github.com/DmitryVdovichencko)
+* [@AndrewParnellSmith](https://github.com/AndrewParnellsmith)
 
