@@ -32,3 +32,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@bilalyounso](https://github.com/bilalyounso)
 * [@DmitryVdovichencko](https://github.com/DmitryVdovichencko)
 * [@CryptoCoolby](https://github.com/CryptoCoolby)
+* [@Criticalfault](https://github.com/criticalfault)
