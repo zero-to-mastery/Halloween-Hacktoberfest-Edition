@@ -96,7 +96,16 @@ var movieList = [
   var counter = 0;
   var elem = document.getElementById("randomMovie");
   function change(){
-      elem.innerHTML = movieList[counter].movieName;
+      //elem.innerHTML = movieList[counter].movieName; 
+      var addCard = "";
+        var movieListName = movieList[counter].movieName;
+        var movieImgUrl = movieList[counter].imageURL;
+        var movieUrl = movieList[counter].movieUrl;
+        addCard += '<div class="card-deck"><div class="card" style="width: 90%;">'
+        addCard += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
+        addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div></div>'
+        elem.innerHTML = addCard;
+
       counter++;
       if (counter >= movieList.length){
           counter = 0;
@@ -108,7 +117,16 @@ var movieList = [
       var randMinMov = 1;
       var randMaxMov = numberOfMovies;
       var randNoMov = Math.floor(Math.random() * (+randMaxMov - +randMinMov)) + +randMinMov;
-      elem.innerHTML = movieList[randNoMov].movieName;
+     // elem.innerHTML = movieList[randNoMov].movieName;
+
+      var addCard = "";
+        var movieListName = movieList[randNoMov].movieName;
+        var movieImgUrl = movieList[randNoMov].imageURL;
+        var movieUrl = movieList[randNoMov].movieUrl;
+        addCard += '<div class="card-deck"><div class="card" style="width: 90%;">'
+        addCard += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
+        addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div></div>'
+        elem.innerHTML = addCard;
   }
   // Set an interval and timeout
   stopText = elem.innerHTML = "";

@@ -107,10 +107,18 @@ body {
 }
 
 #movieTitle{
-  color: rgba(65, 65, 184, 0.74);
+  color: rgba(145, 45, 145, 0.74);
   text-align: center;
 }
 
 #randomMovie{
   text-align: center;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  color: rgba(255, 0, 0, 0.753);
+}
+
+#questionMovie {
+  color: rgb(145, 45, 145);
 }
