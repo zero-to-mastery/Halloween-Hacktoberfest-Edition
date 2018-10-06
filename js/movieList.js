@@ -130,7 +130,7 @@ var movieList = [
     var movieUrl = movieList[i].movieUrl;
     addCard += '<div class="card-deck"><div class="card" style="width: 90%;">'
     addCard += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
-    addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div></div>'
+    addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>'
     movieCards.innerHTML = addCard;
   }
-  
+
