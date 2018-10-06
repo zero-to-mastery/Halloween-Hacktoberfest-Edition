@@ -1,15 +1,24 @@
-h1 {
-  font-family: 'Muli', sans-serif;
+
+h2 {
+  text-align: center;
+  margin:40px 32px;
 }
 
-#bookList {
-  margin: 50px 0;
+.books {
+  padding: 40px;
 }
 
-#exorcist {
-  padding-top: 40%;
+.card {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 28px;
 }
 
-#main {
-	height: 80vh;
+.card h3 {
+  font-size: 20px;
+  color: #263238;
+}
+
+.card a, .card p {
+  color: #263238;
+  font-size: 16px;
 }
