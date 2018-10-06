@@ -38,13 +38,12 @@
   -webkit-box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
   -moz-box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
   box-shadow: 5px 5px 20px 1px rgba(219, 161, 35, 0.38);
-  -webkit-transition: margin 0.5s ease-out;
-  -moz-transition: margin 0.5s ease-out;
-  -o-transition: margin 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 
 .namecards:hover {
-  margin-top: 5px;
   -webkit-box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
   -moz-box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
   box-shadow: 10px 10px 20px 1px rgba(219, 161, 35, 0.62);
