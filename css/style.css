@@ -275,16 +275,6 @@ video {
   }
 }
 
-#questionMovie {
-  color: rgb(145, 45, 145);
-}
-
-#randomMovie {
-  border: none;
-  text-align: center;
-  color: rgba(255, 0, 0, 0.753);
-}
-
 a:link,
 a:hover {
   color: white;
@@ -294,9 +284,6 @@ a:visited {
   color: orange;
 }
 
-<<<<<<< HEAD
-=======
 .container.marketing {
     margin-top: 50px;
 }
->>>>>>> upstream/master
