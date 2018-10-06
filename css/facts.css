@@ -1,4 +1,4 @@
-#load{	
+#load{
     width:100%;
     height:100%;
     position:fixed;
@@ -9,6 +9,16 @@
 }
 body {
     background-color: darkslategray;
+
+    /* sticky footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+  /* sticky footer */
+  flex: 1;
 }
 
 #fact{
@@ -22,4 +32,3 @@ body {
     margin-top: 5em;
     margin-bottom: 6em;
 }
-
