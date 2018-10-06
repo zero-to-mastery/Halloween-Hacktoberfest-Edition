@@ -89,13 +89,13 @@ var movieList = [
 
 
   // Get random seconds
-  var randMin = 3000;
-  var randMax = 9000;
-  var randNo = Math.floor(Math.random() * (+randMax - +randMin)) + +randMin;
+  const randMin = 3000;
+  const randMax = 9000;
+  const randNo = Math.floor(Math.random() * (+randMax - +randMin)) + +randMin;
   // Loop through the movies array and change text
-  var counter = 0;
-  var elem = document.getElementById("randomMovie");
-  function change(){
+  let counter = 0;
+  const elem = document.getElementById("randomMovie");
+  const change = () => {
       elem.innerHTML = movieList[counter].movieName;
       counter++;
       if (counter >= movieList.length){
@@ -103,11 +103,11 @@ var movieList = [
       }
   }
   // Randomly stop on a list item from the movies array
-  function stopShuffle(){
-      var numberOfMovies = movieList.length;
-      var randMinMov = 1;
-      var randMaxMov = numberOfMovies;
-      var randNoMov = Math.floor(Math.random() * (+randMaxMov - +randMinMov)) + +randMinMov;
+  const stopShuffle = () => {
+      const numberOfMovies = movieList.length;
+      const randMinMov = 1;
+      const randMaxMov = numberOfMovies;
+      const randNoMov = Math.floor(Math.random() * (+randMaxMov - +randMinMov)) + +randMinMov;
       elem.innerHTML = movieList[randNoMov].movieName;
   }
   // Set an interval and timeout
@@ -115,19 +115,19 @@ var movieList = [
   var tmer = setInterval(() => change(), 500);
   setTimeout(() => { clearInterval(tmer); stopShuffle();},randNo);
   // Loading cirle
-  var loadingCircle = document.getElementById("loadCircle");
-  var pumpkinImage = document.getElementById("imagePumpkin");
+  const loadingCircle = document.getElementById("loadCircle");
+  const pumpkinImage = document.getElementById("imagePumpkin");
   setTimeout(function(){
       loadingCircle.style.display = "none";
       pumpkinImage.style.display = "block";
   }, randNo);
   
    // Loop through the movies array and display to list
-  var addCard = "";
+  let addCard = "";
   for (var i = 0; i < movieList.length; i++){
-    var movieListName = movieList[i].movieName;
-    var movieImgUrl = movieList[i].imageURL;
-    var movieUrl = movieList[i].movieUrl;
+    let movieListName = movieList[i].movieName;
+    let movieImgUrl = movieList[i].imageURL;
+    let movieUrl = movieList[i].movieUrl;
     addCard += '<div class="card-deck"><div class="card" style="width: 90%;">'
     addCard += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
     addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div></div>'
