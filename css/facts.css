@@ -26,9 +26,21 @@ main {
     font-family: 'Caveat', cursive;
     text-align: center;
     font-size: 2.3em;
+    margin-bottom: 3rem;
 }
 
 .factdata{
     margin-top: 5em;
     margin-bottom: 6em;
 }
+<<<<<<< HEAD
+
+.btn-fact {
+    text-align: center; 
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    background-color: #f9a339; 
+    font-size: 2rem;
+}
+=======
+>>>>>>> 1c36b0bd643c4f9549da7f230a4a44fb8a86f83b
