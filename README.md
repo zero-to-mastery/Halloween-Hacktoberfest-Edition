@@ -45,3 +45,34 @@ To ensure everyone has the best chance at participating in this project. Please 
 - Commenting: Try to comment your code, commenting code is a very useful skill to aquire.
 - Respect Content: Only use images/content that we are licensed to use.
 - Issues: Use github issues, to create/find/solve ideas and bugs. 
+
+# Syncing your fork with the original repo 
+setting up upstream
+```
+- git remote -v
+ (output)       
+    origin https://github.com/[Your UserName]/[Your Fork].git (fetch)
+    origin https://github.com/[Your UserName]/[Your Fork].git (push)
+- git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
+- git remote -v 
+ (output)
+    origin https://github.com/[Your UserName]/[Your Fork].git (fetch)
+    origin https://github.com/[Your UserName]/[Your Fork].git (push)
+    upstream https://github.com/[Original Owner UserName]/[Original Repository].git (fetch)
+    upstream https://github.com/[Original Owner UserName]/[Original Repository].git (push)
+
+syncing fork
+- git fetch upstream
+- git chekout master
+- git merge upstream/master
+        (if conflict arises)
+        run this 
+        -git status
+        -open your editor and correct or keep incoming or previous changes
+        -git add .
+        -git commit -m "[PUSH_MESSAGE]"
+        -git push
+- [rerun]  git merge upstream/master
+ (output)
+ everything up-to-date
+```
