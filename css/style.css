@@ -6,6 +6,9 @@
 /* ===============
    GLOBAL SETTINGS
    =============== */
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #1e1e1e;
@@ -37,7 +40,7 @@ h2,
 
 .btn:hover {
   background: rgba(255, 166, 0, 0.815);
-  border: 1.5px solid rgba(226, 226, 226, 0.815);
+  border: 2.5px solid rgba(226, 226, 226, 0.815);
 }
 
 /* === NavBar === */
@@ -84,7 +87,9 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
   padding: 5px 10px;
   margin: 0 5px;
   border: 1px solid rgba(255, 255, 255, 0.377);
-  /*border-radius: 5px;*/
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+  /* border-radius: 5px; */
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover {
@@ -95,6 +100,9 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
   padding: 5px 10px;
   margin: 0 5px;
   border: 1px solid rgba(226, 137, 3, 0.377);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari */
+  transform: scale(1.1);
   /*border-radius: 5px;*/
 }
 
@@ -273,7 +281,7 @@ video {
 
 #randomMovie {
   border: none;
-  text-align: center;
+  /*text-align: center;*/
   color: rgba(255, 0, 0, 0.753);
 }
 
@@ -286,6 +294,9 @@ a:visited {
   color: orange;
 }
 
+<<<<<<< HEAD
+=======
 .container.marketing {
     margin-top: 50px;
 }
+>>>>>>> upstream/master
