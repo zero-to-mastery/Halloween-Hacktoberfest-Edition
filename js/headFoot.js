@@ -8,7 +8,7 @@ console.log("Header and nav have been dynamically loaded")
 
 
 
-    
+
 
 
 
@@ -44,7 +44,7 @@ document.getElementById("myNav").innerHTML =
           '<li class="nav-item">' +
               '<a class="nav-link" href="names.html">Names</a>' +
           '</li>' +
-          
+
           '<li class="nav-item">' +
               '<a class="nav-link" href="halloweenMovies.html">Movies</a>' +
           '</li>' +
@@ -57,7 +57,7 @@ document.getElementById("myNav").innerHTML =
         '</ul>'+
       '</div>' +
     '</nav>' +
-  '</header>' 
+  '</header>'
 
 // Set the active link on the NavBar
 let links = document.querySelectorAll('.nav-link');
@@ -65,11 +65,11 @@ let links = document.querySelectorAll('.nav-link');
 let url = window.location.href;
 console.log("Url of the page", url);
 links.forEach((link)=>{
-	if(link.href === url)	
+	if(link.href === url)
     link.parentElement.classList.add('active');
   else if (link.href.endsWith("index.html") && url.endsWith('/')) // if base url is '/' and not index
     link.parentElement.classList.add('active');
-	else 
+	else
 		link.parentElement.classList.remove('active');
 })
 
@@ -77,13 +77,13 @@ links.forEach((link)=>{
 // mfContents gets the contents of the element, so we can add them back in
 let mfContents = document.getElementById("myFoot").innerHTML;
 document.getElementById("myFoot").innerHTML =
-  '<footer class="container-fluid footer" >' +
+  '<footer class="footer" >' +
       '<p>&copy; 2017-2018 Zero To Mastery Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>' +
-      '<a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fas fa-arrow-circle-up fa-2x"></i></a>' +
+      '<a id="back-to-top" href="#" class="back-to-top d-block" role="button" title="return to the top" data-toggle="tooltip" data-placement="left"><i class="fas fa-arrow-circle-up fa-2x"></i></a>' +
       mfContents +
   '</footer>'
 
-  
+
 // Load and implant the End of Body Scripts
 // esContents gets the contents of the element, so we can add them back in
 let esContents = document.getElementById("endScripts").innerHTML;
@@ -93,9 +93,9 @@ document.getElementById("endScripts").innerHTML =
     '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>' +
 
     '<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>' +
-    
+
     '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>' +
-    
+
     '<script src="./js/global.js"></script>' +
     esContents
 
