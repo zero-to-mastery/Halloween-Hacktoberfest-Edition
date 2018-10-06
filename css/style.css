@@ -4,7 +4,7 @@
 */
 
 /* ===============
-   GLOBAL SETTINGS 
+   GLOBAL SETTINGS
    =============== */
 
 body {
@@ -51,7 +51,7 @@ h2,
   padding-top: 20px !important;
 }
 
-/*I COMMENTED OUT THE NAVBAR COULOUR AS IT OVERRIDES THE TRANSPARENCY ON THE HOME PAGE. 
+/*I COMMENTED OUT THE NAVBAR COULOUR AS IT OVERRIDES THE TRANSPARENCY ON THE HOME PAGE.
 CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
 */
 
@@ -285,3 +285,10 @@ a:hover {
 a:visited {
   color: orange;
 }
+
+<<<<<<< HEAD
+=======
+.container.marketing {
+    margin-top: 50px;
+}
+>>>>>>> upstream/master
