@@ -20,8 +20,6 @@ body {
 
 .main {
   margin-top: -1%;
-
-  
 }
 
 p {
@@ -74,7 +72,7 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
 
 .navbar-nav {
   /* NavBars Main Styling */
-  width: 80%;
+  width: 100%;
   /*	margin: 0px -4rem 0 auto !important;*/
   text-align: center;
   justify-content: center;
@@ -287,14 +285,14 @@ video {
   color: rgba(255, 0, 0, 0.753);
 }
 
-a:link,
-a:hover {
-  color: white;
-}
 
-a:visited {
+a {
   color: orange;
 }
+a:hover {
+  color: rgb(104, 104, 104);
+}
+
 
 .container.marketing {
     margin-top: 50px;
