@@ -1,6 +1,6 @@
 #fog-roll img{
 	z-index: 3;
-	/* position: absolute; */
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	animation-name: fog-roll-animation;

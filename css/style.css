@@ -41,6 +41,7 @@ h2,
 .btn:hover {
   background: rgba(255, 166, 0, 0.815);
   border: 2.5px solid rgba(226, 226, 226, 0.815);
+  color: #fff
 }
 
 /* === NavBar === */
