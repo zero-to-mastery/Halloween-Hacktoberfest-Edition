@@ -75,7 +75,6 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
   width: 100%;
   /*	margin: 0px -4rem 0 auto !important;*/
   text-align: center;
-  justify-content: center;
   grid-template-columns: repeat(5, 1fr);
 }
 
