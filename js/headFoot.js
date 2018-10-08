@@ -85,6 +85,7 @@ links.forEach((link)=>{
 
 // Loads and implants the Footer
 // mfContents gets the contents of the element, so we can add them back in
+if(document.getElementById("myFoot") != null){
 let mfContents = document.getElementById("myFoot").innerHTML;
 document.getElementById("myFoot").innerHTML =
   '<footer class="footer" >' +
@@ -93,9 +94,12 @@ document.getElementById("myFoot").innerHTML =
       mfContents +
   '</footer>'
 
+}
+
 
 // Load and implant the End of Body Scripts
 // esContents gets the contents of the element, so we can add them back in
+if(document.getElementById("endScripts") != null){
 let esContents = document.getElementById("endScripts").innerHTML;
 document.getElementById("endScripts").innerHTML =
     '<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>' +
@@ -107,7 +111,8 @@ document.getElementById("endScripts").innerHTML =
     '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>' +
 
     '<script src="./js/global.js"></script>' +
-    esContents
+    esContents;
+}
 
 //Add color to navbar on scroll and remove color when back to top.
 document.addEventListener('scroll', () => {
