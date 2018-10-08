@@ -17,4 +17,4 @@ document.getElementById('head').innerHTML =
     '<link href="./css/style.css" rel="stylesheet">' +
     '<!-- meta icon -->' +
     '<link rel="icon" href="./images/pumpkin.jpg" type="image/gif" sizes="32x32">' +
-    hContents
+    hContents;
