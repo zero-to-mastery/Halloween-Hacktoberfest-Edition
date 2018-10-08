@@ -1,28 +1,29 @@
 body {
-  background-color:#1d1d1d !important;
-  font-family: "Asap", sans-serif;
-  color:#989898;
-  margin:10px;
-  font-size:16px;
+    background-color: #1d1d1d !important;
+    font-family: "Asap", sans-serif;
+    color: #989898;
+    margin: 10px;
+    font-size: 16px;
 }
 
 #demo {
-  height:100%;
-  position:relative;
-  overflow:hidden;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 
-.green{
-  background-color:#6fb936;
+.green {
+    background-color: #6fb936;
 }
-        .thumb{
-            margin-bottom: 20px;
-        }
 
-        .page-top{
-            margin-top:150px;
-        }
+.thumb {
+    margin-bottom: 20px;
+}
+
+.page-top {
+    margin-top: 65px;
+}
 
 
 img.zoom {
@@ -42,17 +43,24 @@ img.zoom {
     -o-transform: scale(1.2);
     transform: scale(1.2);
 }
-    .modal-header {
 
-     border-bottom: none;
+.modal-header {
+
+    border-bottom: none;
 }
-    .modal-title {
-        color:#000;
-    }
-    .modal-footer{
-      display:none;
-    }
 
-#halloweenCostumes{
-  text-align: center;
+.modal-title {
+    color: #000;
+}
+
+.modal-footer {
+    display: none;
+}
+
+#halloweenCostumes {
+    text-align: center;
+    color: #F75F1C;
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    margin-top: 20px;
 }
