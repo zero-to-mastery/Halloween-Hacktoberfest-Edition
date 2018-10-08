@@ -1,6 +1,6 @@
 #fog-roll img{
 	z-index: 3;
-	position: absolute;
+	/* position: absolute; */
 	height: 100%;
 	width: 100%;
 	animation-name: fog-roll-animation;
@@ -11,5 +11,5 @@
 
 @keyframes fog-roll-animation {
     from { opacity: 1 }
-    to { opacity: 0 }
+    to { opacity: 0; display: none }
 }
