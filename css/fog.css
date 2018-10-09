@@ -11,5 +11,5 @@
 
 @keyframes fog-roll-animation {
     from { opacity: 1 }
-    to { opacity: 0 }
+    to { opacity: 0; z-index: -99 }
 }
