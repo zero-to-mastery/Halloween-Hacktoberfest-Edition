@@ -36,3 +36,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@Criticalfault](https://github.com/criticalfault)
 * [@alenaog](https://github.com/alenanog)
 * [@andrewparnellsmith](https://github.com/AndrewParnellsmith)
+* [@SoftwareIntrospectre] (https://github.com/SoftwareIntrospectre)
