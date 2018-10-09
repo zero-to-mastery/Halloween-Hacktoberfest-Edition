@@ -1,12 +1,12 @@
 .container {
-   z-index: 1;
+  z-index: 1;
 }
 
 #fog-roll {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 h1 {
@@ -23,10 +23,18 @@ h1 {
 .card {
   font-family: Helvetica, Arial, sans-serif;
   margin-bottom: 28px;
+  transition-timing-function: ease-in-out;
+  transition: .7s;
 }
 
 .card h3 {
   font-size: 20px;
   color: black;
   text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
+  text-transform: uppercase;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
