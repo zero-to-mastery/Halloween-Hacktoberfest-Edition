@@ -85,6 +85,11 @@ var movieList = [
     "imageURL" : "http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2012/07/beetlejuice_1280x720.jpg",
     "movieUrl" : "https://www.imdb.com/title/tt0094721/",
     },
+    {
+    "movieName" : "Alien",
+    "imageURL" : "https://m.media-amazon.com/images/M/MV5BNDUzMTUwNjA4NV5BMl5BanBnXkFtZTYwMzEwOTk2._V1_.jpg",
+    "movieUrl" : "https://www.imdb.com/title/tt0078748/",
+    },
 ];
 
 
@@ -121,7 +126,7 @@ var movieList = [
       loadingCircle.style.display = "none";
       pumpkinImage.style.display = "block";
   }, randNo);
-  
+
    // Loop through the movies array and display to list
   let addCard = "";
   for (var i = 0; i < movieList.length; i++){
@@ -133,4 +138,3 @@ var movieList = [
     addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>'
     movieCards.innerHTML = addCard;
   }
-

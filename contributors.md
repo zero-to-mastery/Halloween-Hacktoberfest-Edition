@@ -38,3 +38,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@andrewparnellsmith](https://github.com/AndrewParnellsmith)
 * [@ashishcodes4] (https://github.com/ashishcodes4)
 * [@SoftwareIntrospectre] (https://github.com/SoftwareIntrospectre)
+* [@bronasek] (https://github.com/bronasek)
