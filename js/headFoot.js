@@ -54,6 +54,11 @@ document.getElementById("myNav").innerHTML =
               '<a class="nav-link" href="halloweenBooks.html">Books</a>' +
           '</li>' +
 
+          '<!-- Games Link -->' +
+          '<li class="nav-item">' +
+              '<a class="nav-link" href="halloweenGames.html">Games</a>' +
+          '</li>' +
+
           '<!-- Catch the Witch Link -->' +
           '<li class="nav-item">' +
               '<a class="nav-link" href="catchTheWitch.html">Catch the Witch</a>' +
