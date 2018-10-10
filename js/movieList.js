@@ -90,6 +90,11 @@ var movieList = [
     "imageURL" : "https://m.media-amazon.com/images/M/MV5BNDUzMTUwNjA4NV5BMl5BanBnXkFtZTYwMzEwOTk2._V1_.jpg",
     "movieUrl" : "https://www.imdb.com/title/tt0078748/",
     },
+    {
+    "movieName" : "The Texas Chainsaw Massacre",
+    "imageURL" : "https://cdn.mos.cms.futurecdn.net/RdwU2pc7fBtabesE2sPGhQ-970-80.jpg",
+    "movieUrl" : "https://www.imdb.com/title/tt0072271/?ref_=nv_sr_1",
+    },    
 ];
 
 
