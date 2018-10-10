@@ -28,6 +28,9 @@ document.getElementById("myNav").innerHTML =
           '<li class="nav-item">' +
             '<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>' +
           '</li>' +
+          '<li class="nav-item">' +
+            '<a class="nav-link" href="about.html">About</a>' +
+          '</li>' +
 
           '<li class="nav-item">' +
             '<a class="nav-link" href="recipes.html">Recipes</a>' +
