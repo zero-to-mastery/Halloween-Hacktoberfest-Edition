@@ -28,6 +28,9 @@ document.getElementById("myNav").innerHTML =
           '<li class="nav-item">' +
             '<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>' +
           '</li>' +
+          '<li class="nav-item">' +
+            '<a class="nav-link" href="about.html">About</a>' +
+          '</li>' +
 
           '<li class="nav-item">' +
             '<a class="nav-link" href="recipes.html">Recipes</a>' +
@@ -52,6 +55,11 @@ document.getElementById("myNav").innerHTML =
           '<!-- Books Link -->' +
           '<li class="nav-item">' +
               '<a class="nav-link" href="halloweenBooks.html">Books</a>' +
+          '</li>' +
+
+          '<!-- Games Link -->' +
+          '<li class="nav-item">' +
+              '<a class="nav-link" href="halloweenGames.html">Games</a>' +
           '</li>' +
 
           '<!-- Catch the Witch Link -->' +

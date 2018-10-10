@@ -1,5 +1,5 @@
-.recipes{
-    background-image: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 255, 255, 0.158)),url('../images/recipeback.jpeg');
+.recipes {
+    background-image: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 255, 255, 0.158)), url('../images/recipeback.jpeg');
     background-size: cover;
     /* position: relative; */
     background-position: center;
@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
 }
 
-.heading{
-    font-size: 4em;   
+.heading {
+    font-size: 4em;
     color: black;
     padding-top: 15px;
 }
@@ -29,7 +29,8 @@
     width: 50%;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: black;
 }
 
