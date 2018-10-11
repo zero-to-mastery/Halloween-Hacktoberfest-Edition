@@ -151,6 +151,7 @@ var movieList = [
   const loadingCircle = document.getElementById("loadCircle");
   const pumpkinImage = document.getElementById("imagePumpkin");
   setTimeout(function(){
+    console.log('timeout');
       loadingCircle.style.display = "none";
       pumpkinImage.style.display = "block";
   }, randNo);
