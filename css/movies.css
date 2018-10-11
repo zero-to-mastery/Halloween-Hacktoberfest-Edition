@@ -109,16 +109,6 @@ body {
 #movieTitle{
   color: rgba(145, 45, 145, 0.74);
   text-align: center;
+  margin-bottom: 35px;
 }
 
-#randomMovie{
-  text-align: center;
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  color: rgba(255, 0, 0, 0.753);
-}
-
-#questionMovie {
-  color: rgb(145, 45, 145);
-}
