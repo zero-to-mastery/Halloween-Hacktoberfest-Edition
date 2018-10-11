@@ -42,5 +42,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@bronasek] (https://github.com/bronasek)
 * [@Sanidhya Samadhiya] (https://github.com/sanidhya2000)
 * [@Edward2247](https://github.com/Edward2247)
-
+* [@rupna](https://github.com/zonex909)
 
