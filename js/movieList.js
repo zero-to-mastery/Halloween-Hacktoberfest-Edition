@@ -85,7 +85,7 @@ var movieList = [
     "imageURL" : "http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2012/07/beetlejuice_1280x720.jpg",
     "movieUrl" : "https://www.imdb.com/title/tt0094721/",
     },
- more-halloween-movies
+    // more-halloween-movies
     // adding more scary movies
     {
     "movieName" : "The Exorcist",
@@ -106,7 +106,7 @@ var movieList = [
     "movieName" : "The Texas Chainsaw Massacre",
     "imageURL" : "https://cdn.mos.cms.futurecdn.net/RdwU2pc7fBtabesE2sPGhQ-970-80.jpg",
     "movieUrl" : "https://www.imdb.com/title/tt0072271/?ref_=nv_sr_1",
-    },    
+    }
 ];
 
 
@@ -122,7 +122,7 @@ var movieList = [
       addCardChange += '<div class="card-deck"><div class="card" style="width: 90%;">'
       addCardChange += '<img class="card-img-top" src="' + movieList[counter].imageURL + '" alt="name">'
       addCardChange += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieList[counter].movieUrl + '" target="_blank">' + movieList[counter].movieName + '</a></h4></div></div></div>'
-      elem.innerHTML = addCardChange; 
+      elem.innerHTML = addCardChange;
       counter++;
       if (counter >= movieList.length){
           counter = 0;
@@ -141,7 +141,7 @@ var movieList = [
       addCardShuffle += '<div class="card-deck"><div class="card" style="width: 90%;">'
       addCardShuffle += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
       addCardShuffle += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>'
-      elem.innerHTML = addCardShuffle; 
+      elem.innerHTML = addCardShuffle;
   }
   // Set an interval and timeout
   stopText = elem.innerHTML = "";
