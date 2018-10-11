@@ -31,6 +31,17 @@
   height: 32rem;
 }
 
+/* Put a slight overlay on the Carousel image to make the text more readable */
+.carousel-item::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
+    background-color: rgba(0,0,0,0.2);
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
