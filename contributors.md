@@ -26,6 +26,7 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@kudeh](https://github.com/kudeh)
 * [@Raineldn](https://github.com/Raineldn)
 * [@m2paulc](http://github.com/m2paulc)
+* [@ankit14136] (https://github.com/ankit14136)
 * [@James Joongho Kim](https://github.com/april9288)
 * [@sunitasen](https://github.com/sunitasen)
 * [@Dhaval1403](https://github.com/Dhaval1403)
@@ -38,3 +39,8 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@andrewparnellsmith](https://github.com/AndrewParnellsmith)
 * [@ashishcodes4] (https://github.com/ashishcodes4)
 * [@SoftwareIntrospectre] (https://github.com/SoftwareIntrospectre)
+* [@bronasek] (https://github.com/bronasek)
+* [@Sanidhya Samadhiya] (https://github.com/sanidhya2000)
+* [@Edward2247](https://github.com/Edward2247)
+
+

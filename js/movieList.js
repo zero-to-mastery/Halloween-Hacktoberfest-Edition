@@ -85,6 +85,7 @@ var movieList = [
     "imageURL" : "http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2012/07/beetlejuice_1280x720.jpg",
     "movieUrl" : "https://www.imdb.com/title/tt0094721/",
     },
+ more-halloween-movies
     // adding more scary movies
     {
     "movieName" : "The Exorcist",
@@ -95,7 +96,17 @@ var movieList = [
     "movieName": "Poltergeist",
     "imageURL": "https://images-na.ssl-images-amazon.com/images/I/81yuQrgfhYL._SY445_.jpg",
     "movieUrl": "https://www.imdb.com/title/tt0084516/",
-    }
+    },
+    {
+    "movieName" : "Alien",
+    "imageURL" : "https://m.media-amazon.com/images/M/MV5BNDUzMTUwNjA4NV5BMl5BanBnXkFtZTYwMzEwOTk2._V1_.jpg",
+    "movieUrl" : "https://www.imdb.com/title/tt0078748/",
+    },
+    {
+    "movieName" : "The Texas Chainsaw Massacre",
+    "imageURL" : "https://cdn.mos.cms.futurecdn.net/RdwU2pc7fBtabesE2sPGhQ-970-80.jpg",
+    "movieUrl" : "https://www.imdb.com/title/tt0072271/?ref_=nv_sr_1",
+    },    
 ];
 
 
@@ -107,19 +118,30 @@ var movieList = [
   let counter = 0;
   const elem = document.getElementById("randomMovie");
   const change = () => {
-      elem.innerHTML = movieList[counter].movieName;
+      let addCardChange = "";
+      addCardChange += '<div class="card-deck"><div class="card" style="width: 90%;">'
+      addCardChange += '<img class="card-img-top" src="' + movieList[counter].imageURL + '" alt="name">'
+      addCardChange += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieList[counter].movieUrl + '" target="_blank">' + movieList[counter].movieName + '</a></h4></div></div></div>'
+      elem.innerHTML = addCardChange; 
       counter++;
       if (counter >= movieList.length){
           counter = 0;
       }
   }
   // Randomly stop on a list item from the movies array
+  let addCardShuffle = "";
   const stopShuffle = () => {
       const numberOfMovies = movieList.length;
       const randMinMov = 1;
       const randMaxMov = numberOfMovies;
       const randNoMov = Math.floor(Math.random() * (+randMaxMov - +randMinMov)) + +randMinMov;
-      elem.innerHTML = movieList[randNoMov].movieName;
+      let movieListName = movieList[randNoMov].movieName;
+      let movieImgUrl = movieList[randNoMov].imageURL;
+      let movieUrl = movieList[randNoMov].movieUrl;
+      addCardShuffle += '<div class="card-deck"><div class="card" style="width: 90%;">'
+      addCardShuffle += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
+      addCardShuffle += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>'
+      elem.innerHTML = addCardShuffle; 
   }
   // Set an interval and timeout
   stopText = elem.innerHTML = "";
@@ -132,7 +154,7 @@ var movieList = [
       loadingCircle.style.display = "none";
       pumpkinImage.style.display = "block";
   }, randNo);
-  
+
    // Loop through the movies array and display to list
   let addCard = "";
   for (var i = 0; i < movieList.length; i++){
@@ -144,4 +166,3 @@ var movieList = [
     addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>'
     movieCards.innerHTML = addCard;
   }
-
