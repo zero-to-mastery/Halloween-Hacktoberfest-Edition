@@ -1,5 +1,6 @@
 body{
     overflow: hidden;
+    margin-top: 45px;
 }
 
 #myFoot{
@@ -14,7 +15,8 @@ body{
     background-color: #343a40cc;
     padding-right: 30px;
     padding-top:10px;
-    height: 67vh
+    height: 67vh;
+    margin-top: 35px;
 }
 
 .description{
