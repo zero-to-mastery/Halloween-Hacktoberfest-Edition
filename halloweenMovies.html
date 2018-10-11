@@ -27,8 +27,11 @@
         <div class="col">
           <div class="randMovieDiv">
             <h2 id="questionMovie">Which Halloween movie should you see tonight?</h2>
-              <div class="loader" id="loadCircle"></div>
               <div id="randomMovie"></div>
+              <div class="loader" id="loadCircle"></div>
+              <div id="imagePumpkin" style="display: none;">
+                <img src="https://i.pinimg.com/originals/77/d9/4d/77d94d850efa36d3c9d10e0543b33fc6.png" height="50" width="50" />
+              </div>
           </div>
         </div>
         <!-- Halloween movie card list -->
@@ -36,45 +39,24 @@
           <h1 id="movieTitle">Halloween Movies</h1>
           <div class="card-columns" id="movieCards"></div>
         </div>
-        <div class="col">
-            <div class="randMovieDiv">
-              <h2 id="questionMovie">Which Halloween movie should you see tonight?</h2>
-              <div class="row">
-                <div class="col text-right">
-                  <div class="loader" id="loadCircle"></div>
-                  <div id="imagePumpkin" style="display: none;">
-                    <img src="https://i.pinimg.com/originals/77/d9/4d/77d94d850efa36d3c9d10e0543b33fc6.png" height="50" width="50" />
-                  </div>
-                </div>
-                <div class="col align-self-center text-left">
-                    <div id="randomMovie"></div>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
     </div>
-
   </main>
-
-
 
   <div id="myFoot">
     <!-- Footer is dynamically loaded -->
     <!-- If you need to include links check out ./js/headFoot.js -->
   </div>
 
-  <div id="endScripts">
-    <!-- Global script files are imported from ./js/headFoot.js -->
-    <!-- Add page specific link below this line -->
+  <!-- Global script files are imported from ./js/headFoot.js -->
+  <!-- Add page specific link below this line -->
 
-    <!-- These two are require for the slider, the dont seem to work in the headFoot.jsinclude -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <!-- Need this version for nameGenerator -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-  </div>
+  <!-- These two are require for the slider, the dont seem to work in the headFoot.jsinclude -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!-- Need this version for nameGenerator -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
   <!-- Loads Nav & Footer - IMPORTANT -->
   <script src="./js/headFoot.js"></script>
