@@ -41,5 +41,6 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@SoftwareIntrospectre] (https://github.com/SoftwareIntrospectre)
 * [@bronasek] (https://github.com/bronasek)
 * [@Sanidhya Samadhiya] (https://github.com/sanidhya2000)
+* [@Edward2247](https://github.com/Edward2247)
 
 

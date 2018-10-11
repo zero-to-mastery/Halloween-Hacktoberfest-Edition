@@ -15,7 +15,6 @@ let readFile = (file) => {
 
 readFile('facts.txt');
 allFacts = allFacts.split("\n");
-
 // Took "onclick" action away from HTML button; "Separation of Concerns"
 const factButton = document.getElementById('fact-button');
 factButton.addEventListener('click', newFact);
