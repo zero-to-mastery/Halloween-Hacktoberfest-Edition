@@ -112,3 +112,8 @@ body {
   margin-bottom: 35px;
 }
 
+#randomMovie{
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}

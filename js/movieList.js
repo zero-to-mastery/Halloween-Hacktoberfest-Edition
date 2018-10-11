@@ -106,26 +106,30 @@ var movieList = [
   let counter = 0;
   const elem = document.getElementById("randomMovie");
   const change = () => {
-      elem.innerHTML = movieList[counter].movieName;
+      let addCardChange = "";
+      addCardChange += '<div class="card-deck"><div class="card" style="width: 90%;">'
+      addCardChange += '<img class="card-img-top" src="' + movieList[counter].imageURL + '" alt="name">'
+      addCardChange += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieList[counter].movieUrl + '" target="_blank">' + movieList[counter].movieName + '</a></h4></div></div></div>'
+      elem.innerHTML = addCardChange; 
       counter++;
       if (counter >= movieList.length){
           counter = 0;
       }
   }
   // Randomly stop on a list item from the movies array
+  let addCardShuffle = "";
   const stopShuffle = () => {
       const numberOfMovies = movieList.length;
       const randMinMov = 1;
       const randMaxMov = numberOfMovies;
       const randNoMov = Math.floor(Math.random() * (+randMaxMov - +randMinMov)) + +randMinMov;
-      //elem.innerHTML = movieList[randNoMov].movieName;
       let movieListName = movieList[randNoMov].movieName;
       let movieImgUrl = movieList[randNoMov].imageURL;
       let movieUrl = movieList[randNoMov].movieUrl;
-      addCard += '<div class="card-deck"><div class="card" style="width: 90%;">'
-      addCard += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
-      addCard += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>'
-      elem.innerHTML = addCard;
+      addCardShuffle += '<div class="card-deck"><div class="card" style="width: 90%;">'
+      addCardShuffle += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">'
+      addCardShuffle += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>'
+      elem.innerHTML = addCardShuffle; 
   }
   // Set an interval and timeout
   stopText = elem.innerHTML = "";
