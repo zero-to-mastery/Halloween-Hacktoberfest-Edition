@@ -85,6 +85,17 @@ var movieList = [
     "imageURL" : "http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2012/07/beetlejuice_1280x720.jpg",
     "movieUrl" : "https://www.imdb.com/title/tt0094721/",
     },
+    // adding more scary movies
+    {
+    "movieName" : "The Exorcist",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/A17D9d%2BtSML._SY445_.jpg",
+    "movieUrl" : "https://www.imdb.com/title/tt0070047/",
+    },
+    {
+    "movieName": "Poltergeist",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/81yuQrgfhYL._SY445_.jpg",
+    "movieUrl": "https://www.imdb.com/title/tt0084516/",
+    }
 ];
 
 
