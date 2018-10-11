@@ -4,17 +4,26 @@ h2 {
   margin:40px 32px;
 }
 
+.row{
+	margin-top: 50px;
+	}
+
 .books {
-  padding: 40px;
-}
+	 padding: 40px;
+};
 
 .card {
   font-family: Helvetica, Arial, sans-serif;
   margin-bottom: 28px;
 }
 
+.card img{
+	height : 400px;
+	width: 233px;
+	
+}
 .card h3 {
-  font-size: 20px;
+  font-size: 15px;
   color: #263238;
 }
 
