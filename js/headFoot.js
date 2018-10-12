@@ -107,21 +107,23 @@ document.getElementById("myFoot").innerHTML =
 
 // Load and implant the End of Body Scripts
 // esContents gets the contents of the element, so we can add them back in
-if(document.getElementById("endScripts") != null){
-let esContents = document.getElementById("endScripts").innerHTML;
-document.getElementById("endScripts").innerHTML =
-    '<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>' +
-    '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>' +
-    '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>' +
-
-    '<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>' +
-
-    '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>' +
-
-    '<script src="./js/global.js"></script>' +
-    esContents;
+function addScript(src, integrity, crossorigin) {
+  var scriptTag = document.createElement('script');
+  scriptTag.setAttribute('src', src);
+  if (integrity) {
+    scriptTag.setAttribute('integrity', integrity);
+  }
+  if (crossorigin) {
+    scriptTag.setAttribute('crossorigin', crossorigin);
+  }
+  document.getElementById("endScripts").appendChild(scriptTag);
 }
-
+if(document.getElementById("endScripts") != null){
+  addScript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', 'sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', 'anonymous');
+  setTimeout(function(){ addScript('https://code.jquery.com/jquery-3.3.1.min.js', 'sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', 'anonymous'); }, 100);
+  setTimeout(function(){ addScript('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', 'sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', 'anonymous'); }, 200);
+  setTimeout(function(){ addScript('./js/global.js');}, 300);  
+}
 //Add color to navbar on scroll and remove color when back to top.
 document.addEventListener('scroll', () => {
   document.querySelector('.navbar').classList.add('navbar-scroll');
