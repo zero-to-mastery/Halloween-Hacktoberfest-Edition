@@ -295,3 +295,11 @@ a:hover {
 .container.marketing {
     margin-top: 50px;
 }
+
+.lead {
+  margin-bottom: 1rem;
+}
+
+.featurette {
+  margin: 10px -15px;
+}
