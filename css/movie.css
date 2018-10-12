@@ -3,6 +3,8 @@
 /* Padding below the footer and lighter body text */
 
 body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     color: #5a5a5a;
   }
   
@@ -13,7 +15,6 @@ body {
   /* Carousel base class */
   .carousel {
     margin-bottom: 4rem;
-    margin-top: -100px;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -23,7 +24,7 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 45rem;
+    height: 32rem;
     background-color: #777;
   }
   .carousel-item > img {
@@ -31,7 +32,7 @@ body {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 45rem;
+    height: 32rem;
   }
   
   
@@ -90,5 +91,5 @@ body {
   }
 
   .movieCarousel{
-    width: 80%;
+    
   }

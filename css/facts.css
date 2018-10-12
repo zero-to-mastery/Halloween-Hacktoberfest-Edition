@@ -10,7 +10,16 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-
+#load{
+	
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+   margin:0 auto;
+    padding:0 auto;
+  background:url("../images/Spinner-1.6s-200px.gif") no-repeat center center black;
+}
 body {
     background-color: darkslategray;
 }

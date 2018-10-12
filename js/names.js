@@ -1,28 +1,52 @@
-var allNames;
-
 function readFile(file) {
-    var f = new XMLHttpRequest();
-    f.open("GET", file, false);
-    f.onreadystatechange = function () {
-        if(f.readyState === 4) {
-            if(f.status === 200 || f.status == 0) {
-                allNames = f.responseText;
-            }
-        }
+  var f = new XMLHttpRequest();
+  f.open("GET", file, false);
+  f.onreadystatechange = function () {
+    if(f.readyState === 4) {
+      if(f.status === 200 || f.status == 0) {
+        allNames = f.responseText;
+      }
     }
-    f.send(null);
+  }
+  f.send(null);
 }
 
 readFile('names.txt');
-allNames = allNames.split("\n");
 
+var allNames = allNames.split("\n");
+
+// Took "onclick" action away from HTML button; "Separation of Concerns"
+var nameButton = document.getElementById('name-button');
+nameButton.addEventListener('click', newName);
+
+// Since they're reused again and again, allocated memory to card-name and card-desc DOM elements
+var cardName = document.getElementById('card-name');
+var cardDesc = document.getElementById('card-desc');
+
+// Initialise name text variables
+var name = "";
+var prevName = "";
+var textName;
+var textDesc;
+
+newName();
+
+// Changes the current name with a random new one
 function newName() {
-  // Changes the current name with a random new one.
-  // We keep rerolling until we get a "new" one (not same as current)
-  var name = allNames[Math.floor(Math.random()*allNames.length)];
-  while (name.substring(0, name.indexOf(":")) == document.getElementById("card-name").innerHTML || name === "") name = allNames[Math.floor(Math.random()*allNames.length)];
-  document.getElementById("card-name").innerHTML = name.substring(0, name.indexOf(":"));
-  document.getElementById("card-desc").innerHTML = name.substring(name.indexOf(":") + 1);
-}
 
-window.onload = newName;
+  // Assign name content from allNames array
+  while (name === prevName) {
+    name = allNames[Math.floor(Math.random() * (allNames.length - 1))];
+  }
+  // Then record the last name we successfully generated
+  prevName = name;
+
+  // Update "textName" & "textDesc" strings with relevant parts from "name"
+  textName = name.substring(0, name.indexOf(":"));
+  textDesc = name.substring(name.indexOf(":") + 1);
+
+  // DOM text assignment changed from use of 'innerHTML' to avoid "bad practice"
+  cardName.textContent = textName;
+  cardDesc.textContent = textDesc;
+}
+// }
