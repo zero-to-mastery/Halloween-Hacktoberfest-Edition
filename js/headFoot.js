@@ -72,6 +72,11 @@ document.getElementById("myNav").innerHTML =
               '<a class="nav-link" href="costumes.html">Costumes</a>' +
           '</li>' +
 
+          '<!-- Activities Link -->' +
+          '<li class="nav-item">' +
+              '<a class="nav-link" href="activities.html">Activities</a>' +
+          '</li>' +
+
         '</ul>'+
       '</div>' +
     '</nav>' +
