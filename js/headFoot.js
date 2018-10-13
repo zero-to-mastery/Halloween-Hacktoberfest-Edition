@@ -18,7 +18,7 @@ document.getElementById("myNav").innerHTML =
   '<header>' +
       '<nav class="navbar navbar-expand-md navbar-dark fixed-top">' +
 
-      '<a class="navbar-brand" href="index.html"><img src="images/ztm-halloween-logo.svg"/></a>' +
+      '<a class="navbar-brand" href="index.html"><img src="images/ztm-halloween-logo.svg" alt="ZTM"/></a>' +
       '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">' +
         '<span class="navbar-toggler-icon"></span>' +
       '</button>' +
@@ -127,7 +127,7 @@ if(document.getElementById("endScripts") != null){
   addScript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', 'sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', 'anonymous');
   setTimeout(function(){ addScript('https://code.jquery.com/jquery-3.3.1.min.js', 'sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', 'anonymous'); }, 100);
   setTimeout(function(){ addScript('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', 'sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', 'anonymous'); }, 200);
-  setTimeout(function(){ addScript('./js/global.js');}, 300);  
+  setTimeout(function(){ addScript('./js/global.js');}, 300);
 }
 //Add color to navbar on scroll and remove color when back to top.
 document.addEventListener('scroll', () => {

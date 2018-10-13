@@ -106,6 +106,22 @@ var movieList = [
     "movieName" : "The Texas Chainsaw Massacre",
     "imageURL" : "https://cdn.mos.cms.futurecdn.net/RdwU2pc7fBtabesE2sPGhQ-970-80.jpg",
     "movieUrl" : "https://www.imdb.com/title/tt0072271/?ref_=nv_sr_1",
+    },
+    //a few more family friendly halloween movies
+    {
+    "movieName": "Hotel Transylvania",
+    "imageURL": "https://m.media-amazon.com/images/M/MV5BMTM3NjQyODI3M15BMl5BanBnXkFtZTcwMDM4NjM0OA@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "movieUrl": "https://www.imdb.com/title/tt0837562/",
+    },
+    {
+    "movieName" : "Hotel Transylvania 2",
+    "imageURL" : "https://m.media-amazon.com/images/M/MV5BNThkYmNmYzAtOGI2Ny00ODI4LTgwY2MtZmY3YWMxYTUyYjVjXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "movieUrl" : "https://www.imdb.com/title/tt2510894/",
+    },
+    {
+    "movieName" : "Hotel Transylvania 3: Summer Vacation",
+    "imageURL" : "https://m.media-amazon.com/images/M/MV5BNjA1MzU5MTY3OF5BMl5BanBnXkFtZTgwNTU5MDA3NTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "movieUrl" : "https://www.imdb.com/title/tt5220122/",
     }
 ];
 

@@ -43,3 +43,8 @@ h2 {
         padding: 2rem;
     }
 }
+
+.img-resize {
+    height: 400px;
+    width: 525px;
+}
