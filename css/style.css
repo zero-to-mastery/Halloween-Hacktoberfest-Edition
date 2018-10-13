@@ -80,11 +80,11 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
 .navbar-expand-md .navbar-nav .nav-link {
   /* Nav Links Styles */
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.377);
+  color: #999999;
   background-color: black;
   padding: 5px 10px;
   margin: 0 5px;
-  border: 1px solid rgba(255, 255, 255, 0.377);
+  border: 1px solid #999999;
   -webkit-transition: all .5s; /* Safari */
   transition: all .5s;
   /* border-radius: 5px; */
