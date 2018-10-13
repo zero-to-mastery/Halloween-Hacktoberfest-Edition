@@ -46,3 +46,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@thomlom](https://github.com/thomlom)
 * [@cbh6](https://github.com/cbh6)
 * [@scrabill](https://github.com/scrabill)
+* [@SuciuCalin](https://github.com/SuciuCalin)
