@@ -16,6 +16,7 @@ body {
     font-size: 1.3rem;
     text-rendering: optimizeLegibility;
     --navbar-height: 10vh;
+    --footer-height: var(--navbar-height) /* This can be changed if needed */
 }
 
 .main {
@@ -157,11 +158,14 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
 }
 
 .footer {
-    height: 20vh;
+    height: var(--footer-height);
     background-color: #343a40cc;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.fix-footer{
+    min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
 }
 
 .footer a {
