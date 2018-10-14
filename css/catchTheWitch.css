@@ -3,13 +3,6 @@ body{
     margin-top: 45px;
 }
 
-#myFoot{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 160px;
-}
-
 .highscoreInfo{
     text-align: center;
     background-color: #343a40cc;
