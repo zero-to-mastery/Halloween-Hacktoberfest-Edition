@@ -29,6 +29,7 @@ img.zoom {
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .transition {
@@ -43,5 +44,4 @@ img.zoom {
     color: #F75F1C;
     font-family: 'Indie Flower', cursive;
     font-size: 60px;
-    margin-top: 20px;
 }
