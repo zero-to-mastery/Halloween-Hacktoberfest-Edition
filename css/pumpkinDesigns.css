@@ -91,6 +91,10 @@
   /*font-weight: bold;*/
 /*}*/
 
+.search-form {
+  margin-bottom: 1rem;
+}
+
 input.search-text {
     color: #222;
     position: relative;
@@ -127,9 +131,6 @@ input.search-text:focus {
 input.search-submit {
   position: relative;
   z-index: 4;
-  top:17px;
-  left: 49px;
-  width: 45px;
   height: 45px;
   margin: 0;
   padding: 0;
