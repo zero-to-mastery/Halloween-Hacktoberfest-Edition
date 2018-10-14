@@ -6,14 +6,30 @@
 	background-color: rgba(255,255,255,0.0);
 /*	border-color:white;*/
 }
+#fog-roll img {
+    z-index: 3;
+    position: absolute;
+    /* height: 112%; */
+    height: 100vh;
+    width: 100%;
+    animation-name: fog-roll-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 .pic{
 	height: 100%;
 	width: 500px;
 	border-radius: 100px;
 	margin: 1rem;
+    border:3px transparent dashed;
+    transition: all 0.5s ease;
+    transform: scale(0.8);
 }
 .pic:hover{
 	border:3px black dashed;
+    transform: scale(1);
+
 }
 .headd{
 	font-family: 'Bungee Inline', cursive;
@@ -22,6 +38,7 @@
 	background-color:rgba(64, 14, 89,0.5);
 	border-radius: 100px;
 	margin: 1rem;
+    transition: all 0.45s ease;
 }
 .headd:hover{
 	transform: scale(1,1.3);
