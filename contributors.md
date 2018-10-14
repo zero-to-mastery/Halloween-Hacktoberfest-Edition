@@ -47,3 +47,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 * [@cbh6](https://github.com/cbh6)
 * [@scrabill](https://github.com/scrabill)
 * [@SuciuCalin](https://github.com/SuciuCalin)
+* [@OhSnapdragon](https://github.com/OhSnapdragon)

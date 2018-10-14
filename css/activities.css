@@ -1,0 +1,99 @@
+main {
+    margin-top: 21px;
+    padding-bottom: 50px;
+    
+}
+
+.accordion {
+    max-width: 1200px;
+    margin: auto;
+    opacity: 1;
+    
+}
+
+.card {
+    background-color: rgba(172, 167, 167, 0.1);
+    
+}
+
+#card-body1:after {
+    content: "";
+    background-image: url("https://cdn.pixabay.com/photo/2018/10/05/21/38/pumpkins-3726919_960_720.jpg");
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+     bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    background-size: cover;
+}
+
+#card-body2:after {
+    content: "";
+    background-image: url("https://images.pexels.com/photos/1406352/pexels-photo-1406352.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+     bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    background-size: cover;
+}
+
+#card-body3:after {
+    content: "";
+    background-image: url("https://cdn.pixabay.com/photo/2018/10/08/17/55/apples-3733169_960_720.jpg");
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+     bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    background-size: cover;
+}
+
+#card-body4:after {
+    content: "";
+    background-image: url("https://cdn.pixabay.com/photo/2014/11/26/03/52/foggy-545838_960_720.jpg");
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+     bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    background-size: cover;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+
+.btn {
+    background-color: rgba(255, 253, 253, 0.3);
+    border-color: rgb(255, 255, 255);
+    background: none;
+    text-shadow: rgb(0, 0, 0) 1px 1px 6px;
+    
+}
+
+.btn:hover {
+    
+    background: none;
+}
+
+.card-header:hover {
+    text-decoration: none;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 6px;
+}
