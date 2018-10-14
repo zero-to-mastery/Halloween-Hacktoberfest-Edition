@@ -8,12 +8,24 @@
   background:url("../images/Spinner-1.6s-200px.gif") no-repeat center center black;
 } */
 
-#fact{
+#fact {
     color: white;
     font-family: 'Caveat', cursive;
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 2.3rem;
+}
+
+#fog-roll img {
+    z-index: 3;
+    position: absolute;
+    /* height: 112%; */
+    height: 80vh;
+    width: 100%;
+    animation-name: fog-roll-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .factdata {
@@ -22,3 +34,4 @@
     background: #0000005d;
     border: 1px solid #ffffff6c
 }
+

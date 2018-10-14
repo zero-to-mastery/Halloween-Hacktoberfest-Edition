@@ -136,7 +136,7 @@ var movieList = [
   const change = () => {
       let addCardChange = "";
       addCardChange += '<div class="card-deck"><div class="card" style="width: 90%;">'
-      addCardChange += '<img class="card-img-top" src="' + movieList[counter].imageURL + '" alt="name">'
+      addCardChange += '<img class="card-img-top" src="' + movieList[counter].imageURL + '" alt="name">';
       addCardChange += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieList[counter].movieUrl + '" target="_blank">' + movieList[counter].movieName + '</a></h4></div></div></div>'
       elem.innerHTML = addCardChange;
       counter++;
