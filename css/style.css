@@ -15,6 +15,7 @@ body {
     color: white;
     font-size: 1.3rem;
     text-rendering: optimizeLegibility;
+    --navbar-height: 10vh;
 }
 
 .main {
@@ -42,6 +43,10 @@ h2,
     color: #fff
 }
 
+.top-margin{
+    margin-top: var(--navbar-height);
+}
+
 /* === NavBar === */
 
 /* Change logo size */
@@ -50,7 +55,8 @@ h2,
     background-color: rgba(0, 0, 0, 0.815);
     box-shadow: none;
     color: #fff;
-    padding-top: 20px !important;
+    height: var(--navbar-height);
+    align-items: center;
 }
 
 /*I COMMENTED OUT THE NAVBAR COULOUR AS IT OVERRIDES THE TRANSPARENCY ON THE HOME PAGE.
