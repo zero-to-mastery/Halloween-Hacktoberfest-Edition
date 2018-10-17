@@ -20,6 +20,7 @@ body {
     --footer-height: var(--navbar-height) /* This can be changed if needed */
 }
 
+
 .main {
     padding: -1%;
 }
@@ -60,7 +61,9 @@ h2,
     animation-name: colorAnimation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+
 }
+
 
 @keyframes colorAnimation {
     0% {background-color: rgba(0, 0, 0, 0.8)}
@@ -256,6 +259,7 @@ video {
         text-align: center;
         justify-content: center;
         grid-template-columns: repeat(5, 1fr);
+       
     }
 
     .navbar-expand-md .navbar-nav .nav-link {
