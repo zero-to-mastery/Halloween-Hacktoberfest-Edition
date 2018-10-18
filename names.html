@@ -4,8 +4,10 @@
 <head id="head">
   <!-- Head information is dynamically loaded -->
   <!-- If you need to include a different stylesheet do so below -->
+  <script src="./js/cssLoad.js"></script> <!-- Dynamically Imports css -->
   <link href="./css/nameMeanings.css" rel="stylesheet">
   <link href="./css/nameConverter.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/fog.css" />
 </head>
 
 <body>
@@ -13,12 +15,12 @@
     <!-- NavBar is dynamically loaded -->
     <!-- If you need to include links check out ./js/headFoot.js -->
   </div>
+  <div id='fog-roll'>
+    <img src="https://media.giphy.com/media/xEjTM5COAKyNa/giphy-downsized.gif"/>
+  </div>
 
-  <main>
-
-    <!-- Sub nav menu -->
-    <div class="container">
-      <div class="submenu mx-5">
+  <main class="container fix-footer top-margin">
+      <div class="mx-5 pt-3p">
         <ul class="nav nav-pills nav-justified subnav">
 
           <li class="nav-item">
@@ -33,11 +35,11 @@
       </div>
 
       <!-- Content Boxes -->
-      <div class="">
+      <div>
         <div class="tab-content m-5">
 
           <!-- Name Meanings -->
-          <div id="names" class="tab-pane fade in show active">
+          <div id="names" class="tab-pane fade-in show active">
             <div class="card text-white bg-dark namecards">
               <div class="row no-gutters">
                 <div class="col-auto">
@@ -46,7 +48,7 @@
                 <div class="col">
                   <div class="card-block px-4 py-3">
                     <h4 class="card-title" id="card-name"></h4>
-                    <p class="name" id="card-desc"></p>
+                    <p class="name mb-4p" id="card-desc"></p>
                     <!-- Removed unneccesary "href" property that was causing page refresh issues -->
                     <a id="name-button" class="btn">New name!</a>
                   </div>
@@ -56,7 +58,7 @@
           </div>
 
           <!-- Name Generator -->
-          <div id="gen" class="tab-pane fade px-5 py-2 text-center">
+          <div id="gen" class="tab-panel fade px-5 py-2 text-center">
             <div class="">
               <div class="center">
                 <div id="register">
@@ -73,11 +75,8 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
-    </div>
 
   </main>
 

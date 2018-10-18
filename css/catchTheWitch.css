@@ -1,0 +1,30 @@
+body {
+    overflow: hidden;
+    margin-top: 45px;
+}
+
+.highscoreInfo {
+    text-align: center;
+    background-color: #343a40cc;
+    padding-right: 30px;
+    padding-top: 25px;
+    height: 67vh;
+    margin-top: 35px;
+}
+
+.description {
+    margin-top: 15%;
+}
+
+/* font-size */
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-90 {
+    font-size: 90px
+}

@@ -1,4 +1,4 @@
-#load{	
+/* #load{
     width:100%;
     height:100%;
     position:fixed;
@@ -6,20 +6,45 @@
    margin:0 auto;
     padding:0 auto;
   background:url("../images/Spinner-1.6s-200px.gif") no-repeat center center black;
-}
-body {
-    background-color: darkslategray;
-}
+} */
 
-#fact{
+#fact {
     color: white;
     font-family: 'Caveat', cursive;
     text-align: center;
-    font-size: 2.3em;
+    font-size: 1.5em;
+    margin-bottom: 2.3rem;
 }
 
-.factdata{
-    margin-top: 5em;
-    margin-bottom: 6em;
+#fog-roll img {
+    z-index: 3;
+    position: absolute;
+    /* height: 112%; */
+    height: 80vh;
+    width: 100%;
+    animation-name: fog-roll-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
+.factdata {
+    width: 80%;
+    margin: 20px auto;
+    background: #0000005d;
+    border: 1px solid #ffffff6c
+}
+
+#fact-button {
+    background-color: #000;
+    border: none;
+    padding: 10px 35px;
+    color: orange;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+#fact-button:hover {
+    background-color: orange;
+    color: #000;
+}
