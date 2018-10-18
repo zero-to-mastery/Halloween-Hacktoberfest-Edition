@@ -35,3 +35,16 @@
     border: 1px solid #ffffff6c
 }
 
+#fact-button {
+    background-color: #000;
+    border: none;
+    padding: 10px 35px;
+    color: orange;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+#fact-button:hover {
+    background-color: orange;
+    color: #000;
+}

@@ -17,6 +17,11 @@
     background-color: #6fb936;
 } */
 
+/* margins */
+.mb-5p {
+    margin-bottom: 5%;
+}
+
 .thumb {
     margin-bottom: 20px;
 }
@@ -34,6 +39,8 @@ img.zoom {
     color: #F75F1C;
     font-family: 'Indie Flower', cursive;
     font-size: 60px;
+    padding: 5%;
+
 }
 
 .fancybox {
@@ -43,6 +50,7 @@ img.zoom {
     position: relative;
     display: block;
 }
+
 .fancybox img {
     position: absolute;
     top: 50%;

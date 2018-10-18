@@ -28,3 +28,13 @@ h2 {
   color: #263238;
   font-size: 16px;
 }
+
+.card-img-top {
+  max-height: 305px;
+}
+
+.card-body {
+  text-align: center;
+  font-family: monospace;
+  min-height: 110px;
+}

@@ -38,3 +38,11 @@ h1 {
 .card:hover {
   transform: scale(1.1);
 }
+
+.card-img-top {
+  max-height: 240px;
+}
+
+.card-body {
+  min-height: 96px;
+}
