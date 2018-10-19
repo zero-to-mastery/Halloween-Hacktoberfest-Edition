@@ -1,9 +1,9 @@
-function readFile(file) {
-  var f = new XMLHttpRequest();
+const readFile = (file) => {
+  const f = new XMLHttpRequest();
   f.open("GET", file, false);
-  f.onreadystatechange = function () {
-    if(f.readyState === 4) {
-      if(f.status === 200 || f.status == 0) {
+  f.onreadystatechange = () => {
+    if (f.readyState === 4) {
+      if (f.status === 200 || f.status == 0) {
         allNames = f.responseText;
       }
     }
@@ -13,26 +13,26 @@ function readFile(file) {
 
 readFile('names.txt');
 
-var allNames = allNames.split("\n");
+const allNames = allNames.split("\n");
 
 // Took "onclick" action away from HTML button; "Separation of Concerns"
-var nameButton = document.getElementById('name-button');
+const nameButton = document.getElementById('name-button');
 nameButton.addEventListener('click', newName);
 
 // Since they're reused again and again, allocated memory to card-name and card-desc DOM elements
-var cardName = document.getElementById('card-name');
-var cardDesc = document.getElementById('card-desc');
+const cardName = document.getElementById('card-name');
+const cardDesc = document.getElementById('card-desc');
 
 // Initialise name text variables
-var name = "";
-var prevName = "";
-var textName;
-var textDesc;
+const name = "";
+const prevName = "";
+const textName;
+const textDesc;
 
 newName();
 
 // Changes the current name with a random new one
-function newName() {
+newName = () => {
 
   // Assign name content from allNames array
   while (name === prevName) {
