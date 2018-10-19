@@ -51,3 +51,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@The24thDS](https://github.com/The24thDS)
 - [@code-guy21](https://github.com/code-guy21)
 - [@uf0h](https://github.com/uf0h)
+- [@cruzach] (https://github.com/cruzach)
