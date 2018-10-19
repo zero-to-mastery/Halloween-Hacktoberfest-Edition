@@ -36,7 +36,7 @@ var name = "";
 var prevName = "";
 var textName;
 var textDesc;
-//readFile('./names.txt');
+readFile('./names.txt');
 const allNames = fileNames.split("\n");
 
 // Took "onclick" action away from HTML button; "Separation of Concerns"
