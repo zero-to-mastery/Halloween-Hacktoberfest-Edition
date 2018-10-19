@@ -52,6 +52,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@code-guy21](https://github.com/code-guy21)
 - [@uf0h](https://github.com/uf0h)
 - [@cruzach] (https://github.com/cruzach)
+- [@patri05](https://github.com/patri05)
 - [@radwasayed] (https://github.com/radwasayed)
-
-
