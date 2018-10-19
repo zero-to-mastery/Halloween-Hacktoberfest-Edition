@@ -8,7 +8,7 @@ const insertNav = () => {
   // if your page name is myNewPage the href attr will be myNewPage.html
   // and the link text will be My New Page
   const pages= ['index', 'about', 'recipes', 'facts', 'designs', 'names', 'movies', 'books',
-                'games', 'catchTheWitch', 'costumes', 'activities'];
+                'games', 'catchTheWitch', 'costumes', 'activities', 'backgrounds',];
   const generateTitle = (href) =>{
     if(href==='index')
       return 'Home';
