@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 
+
 <head id="head">
+  <meta charset="utf-8"/>
   <!-- Head information is dynamically loaded -->
   <!-- If you need to include a different stylesheet do so below -->
 
@@ -21,9 +23,17 @@
 
   <main role="main" id="main" class="top-margin">
 
+
     <div class="container">
 
       <h2>Spooky Reads</h2>
+        <div class="container">
+        <form action="" role="search" class="search-form">
+          <input type="submit" value="" class="search-submit">
+          <input type="search" name="q" id="search-book" class="search-book" onkeyup="searchBook()" placeholder="Search book titles ..."
+           autocomplete="off">
+        </form>
+      </div>
 
       <div class="books">
 
@@ -224,6 +234,8 @@
 
   <!-- Loads Nav & Footer - IMPORTANT -->
   <script src="./js/headFoot.js"></script>
+  <script src="./js/books.js"></script>
+
 </body>
 
 </html>
