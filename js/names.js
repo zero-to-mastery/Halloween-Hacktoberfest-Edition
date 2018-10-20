@@ -1,7 +1,7 @@
 let namesFromFile;
 
-// Fetches the file, and stores the facts in the allFacts variable
-let readFile = (file) => {
+// Fetches the file, and stores the names in the namesFromFile variable
+const readFile = (file) => {
     fetch(file)
       .then(response => response.text())
       .then((data) => {
@@ -12,10 +12,10 @@ let readFile = (file) => {
 readFile('names.txt');
 
 // Initialise name text variables
-var name = "";
-var prevName = "";
-var textName;
-var textDesc;
+let name = "";
+let prevName = "";
+let textName;
+let textDesc;
 
 // Since they're reused again and again, allocated memory to card-name and card-desc DOM elements
 const cardName = document.getElementById('card-name');
@@ -23,9 +23,9 @@ const cardDesc = document.getElementById('card-desc');
 
 // Took "onclick" action away from HTML button; "Separation of Concerns"
 const newName = () => {
-  // Assign name content from allNames array
+  // Assign name content from namesFromFile array
   while (name === prevName) {
-    name = allNames[Math.floor(Math.random() * (allNames.length - 1))];
+    name = namesFromFile[Math.floor(Math.random() * (namesFromFile.length - 1))];
   }
   // Then record the last name we successfully generated
   prevName = name;
