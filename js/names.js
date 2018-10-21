@@ -9,7 +9,7 @@ const readFile = (file) => {
       });
 }
 
-readFile('names.txt');
+readFile('../txt/names.txt');
 
 // Initialise name text variables
 let name = "";

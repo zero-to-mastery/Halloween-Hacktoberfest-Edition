@@ -9,7 +9,7 @@ let readFile = (file) => {
       });
 }
 
-readFile('facts.txt');
+readFile('../txt/facts.txt');
 // Took "onclick" action away from HTML button; "Separation of Concerns"
 const factButton = document.getElementById('fact-button');
 
