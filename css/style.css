@@ -155,7 +155,7 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
     /*	margin: 0px -4rem 0 auto !important;*/
     text-align: center;
     grid-template-columns: repeat(5, 1fr);
-    align-items: center;
+    justify-content: center;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
