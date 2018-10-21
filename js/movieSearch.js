@@ -19,7 +19,7 @@
         movieBox.innerHTML = "";
         movies.Search.forEach((movie)=>{
             let {Title, Poster, imdbID} = movie;
-            if(Poster == "N/A"){Poster = "./images/noPoster.png"};
+            if(Poster == "N/A"){Poster = "../images/noPoster.png"};
             movieBox.innerHTML += 
             `
             <div class="col-md-3 movie-search-card">

@@ -10,8 +10,8 @@ document.getElementById('head').innerHTML =
     '<!-- fontawesome cdn-->' +
     '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">' +
     '<!-- Custom styles for this template -->' +
-    '<link href="./css/carousel.css" rel="stylesheet">' +
-    '<link href="./css/style.css" rel="stylesheet">' +
+    '<link href="../css/carousel.css" rel="stylesheet">' +
+    '<link href="../css/style.css" rel="stylesheet">' +
     '<!-- meta icon -->' +
-    '<link rel="icon" href="./images/pumpkin.jpg" type="image/gif" sizes="32x32">' +
+    '<link rel="icon" href="../images/pumpkin.jpg" type="image/gif" sizes="32x32">' +
     hContents;
