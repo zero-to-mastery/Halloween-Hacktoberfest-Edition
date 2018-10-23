@@ -16,6 +16,11 @@ h2 {
 .card {
   font-family: Helvetica, Arial, sans-serif;
   margin-bottom: 28px;
+  transition-timing-function: ease-in-out;
+  transition: .7s;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card h3 {
