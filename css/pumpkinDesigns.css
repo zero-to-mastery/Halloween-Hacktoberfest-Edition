@@ -145,3 +145,8 @@ input.search-text::-webkit-search-cancel-button {
   cursor:pointer;
 }
 
+.scrollbar {
+  overflow:scroll;
+  border:5px solid white;
+  height:400px;
+}

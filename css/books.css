@@ -9,6 +9,12 @@ h2 {
   margin-top: 50px;
 }
 
+.scrollbar {
+  overflow:scroll;
+  border:5px solid white;
+  height:400px;
+}
+
 .books {
   padding: 40px;
 }
