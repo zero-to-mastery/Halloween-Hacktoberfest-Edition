@@ -31,7 +31,7 @@ const movieList = [
         },
         {
             movieName: "Haunted Mansion",
-            imageURL: "https://resizing.flixster.com/Jq0fHDenDeKgJ7FRJB01E3WYtfQ=/3000x1937/v1.bjszOTEwMzY7ajsxNzgyNDsxMjAwOzMwMDA7MTkzNw",
+            imageURL: "https://assets.rappler.com/755FE0E0CC734D7E8DE88369DF49E604/img/CBA463BB5D044F389203E30A71F0F831/20151207-Haunted_Mansion-005.jpg",
             movieUrl: "https://www.imdb.com/title/tt3875444/"
         },
         {
