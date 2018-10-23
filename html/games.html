@@ -4,6 +4,7 @@
 <head id="head">
   <!-- Head information is dynamically loaded -->
   <!-- If you need to include a different stylesheet do so below -->
+   <meta charset="UTF-8">
 
   <script src="../js/cssLoad.js"></script> <!-- Dynamically Imports css -->
   <link href="../css/halloweenGames.css" rel="stylesheet">
@@ -25,9 +26,16 @@
     <div class="container">
 
       <h1>Creepy Games</h1>
-
+       <div class="container">
+        <form action="" role="search" class="search-form">
+          <input type="submit" value="" class="search-submit">
+          <input type="search" name="q" id="search-game" class="search-game" onkeyup="searchGame()" placeholder="Search games ..."
+           autocomplete="off">
+        </form>
+      </div>
+      <div class="scrollbar">
       <div class="games">
-
+       
         <div class="row">
 
           <div class="col-sm-6 col-md-3">
@@ -242,6 +250,7 @@
         </div><!-- /.row -->
 
       </div><!-- /.games -->
+    </div> <!-- scrollbar -->
 
     </div><!-- /.container -->
 
@@ -263,6 +272,7 @@
 
   <!-- Loads Nav & Footer - IMPORTANT -->
   <script src="../js/headFoot.js"></script>
+  <script src="../js/gameSearch.js"></script>
 </body>
 
 </html>
