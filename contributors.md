@@ -58,3 +58,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@AnkurAnant](https://github.com/anantankur)
 - [@toserjude](https://github.com/toserjude)
 - [@danIancuV](https://github.com/danIancuV)
+- [@Trapsta](https://github.com/Trapsta)
