@@ -92,3 +92,7 @@ input.search-submit {
 input.search-book::-webkit-search-cancel-button {
   cursor:pointer;
 }
+
+.copywrite {
+	color: #fff;
+}

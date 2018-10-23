@@ -46,7 +46,12 @@ html body {
 }
 
 p {
+<<<<<<< HEAD
     margin: 0;
+=======
+  margin: 0;
+  font-size: .75rem;
+>>>>>>> 25c77034a736bee19642dafd972105debe77da80
 }
 
 h1,
@@ -246,8 +251,17 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
     min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
 }
 
+.wiki-links a{
+  padding-top: 1rem;
+}
+
 .footer a {
+<<<<<<< HEAD
     color: orange;
+=======
+  color: orange;
+  
+>>>>>>> 25c77034a736bee19642dafd972105debe77da80
 }
 
 /* top-to-bottom button */
