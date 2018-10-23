@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head id="head">
+  <!-- Head information is dynamically loaded -->
+  <!-- If you need to include a different stylesheet do so below -->
+  <script src="../js/cssLoad.js"></script> <!-- Dynamically Imports css -->
+  <link href="../css/catchTheWitch.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/fog.css" />
+</head>
+
+<body>
+  <div id="myNav">
+    <!-- NavBar is dynamically loaded -->
+    <!-- If you need to include links check out ./js/headFoot.js -->
+  </div>
+  <!-- <div id='fog-roll'>
+     <img src="https://media.giphy.com/media/xEjTM5COAKyNa/giphy-downsized.gif"/>
+  </div> -->
+
+  <main role="main" class="top-margin fix-footer">
+        <div class="row px-30">
+            <div class="col-8">
+                <div id="witch" style="position: relative;width: 100px; height:auto;">
+                    <img src="../images/witch.png" alt="" style="width: 100px; height:auto;">
+                </div>
+            </div>
+            <div class="col-4 highscoreInfo">
+                <h1>
+                    Your Points
+                </h1>
+                <p class="points fs-90">
+                    0
+                </p>
+                <h2 class="witchTalk">
+                    HAHAHA Catch me!!
+                </h2>
+                <p class="description">
+                    <h4 class="fs-18">Description</h4>
+                    <p class="fs-16">
+                        Try to catch the witch with your mouse cursor by clicking at her.
+                        She is really fast.
+                        Good luck!!!
+                    </p>
+                </p>
+            </div>
+
+  </main>
+
+
+
+  <div id="myFoot">
+    <!-- Footer is dynamically loaded -->
+    <!-- If you need to include links check out ./js/headFoot.js -->
+  </div>
+
+  <div id="endScripts">
+    <!-- Global script files are imported from ./js/headFoot.js -->
+    <!-- Add page specific link below this line -->
+
+    <!-- These two are require for the slider, the dont seem to work in the headFoot.jsinclude -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <!-- Need this version for nameGenerator -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </div>
+
+  <!-- Loads Nav & Footer - IMPORTANT -->
+  <script src="../js/headFoot.js"></script>
+  <!-- Load movie array -->
+  <script src="../js/catchTheWitch.js"></script>
+</body>
+
+</html>

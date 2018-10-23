@@ -1,28 +1,45 @@
-var allNames;
+let namesFromFile;
 
-function readFile(file) {
-    var f = new XMLHttpRequest();
-    f.open("GET", file, false);
-    f.onreadystatechange = function () {
-        if(f.readyState === 4) {
-            if(f.status === 200 || f.status == 0) {
-                allNames = f.responseText;
-            }
-        }
-    }
-    f.send(null);
+// Fetches the file, and stores the names in the namesFromFile variable
+const readFile = (file) => {
+    fetch(file)
+      .then(response => response.text())
+      .then((data) => {
+        namesFromFile = data.split("\n");
+      });
 }
 
-readFile('names.txt');
-allNames = allNames.split("\n");
+readFile('../txt/names.txt');
 
-function newName() {
-  // Changes the current name with a random new one.
-  // We keep rerolling until we get a "new" one (not same as current)
-  var name = allNames[Math.floor(Math.random()*allNames.length)];
-  while (name.substring(0, name.indexOf(":")) == document.getElementById("card-name").innerHTML || name === "") name = allNames[Math.floor(Math.random()*allNames.length)];
-  document.getElementById("card-name").innerHTML = name.substring(0, name.indexOf(":"));
-  document.getElementById("card-desc").innerHTML = name.substring(name.indexOf(":") + 1);
+// Initialise name text variables
+let name = "";
+let prevName = "";
+let textName;
+let textDesc;
+
+// Since they're reused again and again, allocated memory to card-name and card-desc DOM elements
+const cardName = document.getElementById('card-name');
+const cardDesc = document.getElementById('card-desc');
+
+// Took "onclick" action away from HTML button; "Separation of Concerns"
+const newName = () => {
+  // Assign name content from namesFromFile array
+  while (name === prevName) {
+    name = namesFromFile[Math.floor(Math.random() * (namesFromFile.length - 1))];
+  }
+  // Then record the last name we successfully generated
+  prevName = name;
+
+  // Update "textName" & "textDesc" strings with relevant parts from "name"
+  textName = name.substring(0, name.indexOf(":"));
+  textDesc = name.substring(name.indexOf(":") + 1);
+
+  // DOM text assignment changed from use of 'innerHTML' to avoid "bad practice"
+  cardName.textContent = textName;
+  cardDesc.textContent = textDesc;
 }
 
-window.onload = newName;
+const nameButton = document.getElementById('name-button');
+nameButton.addEventListener('click', newName);
+
+

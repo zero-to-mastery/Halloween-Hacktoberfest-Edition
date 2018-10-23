@@ -1,0 +1,51 @@
+.recipes {
+    background-image: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 255, 255, 0.158)), url('../images/recipeback.jpeg');
+    background-size: cover;
+    /* position: relative; */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    font-size: 4em;
+    color: black;
+    padding-top: 15px;
+}
+
+.tc {
+    text-align: center;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1,
+h2 {
+    color: black;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+@media screen and (min-width: 30em) {
+    .pa4-ns {
+        padding: 2rem;
+    }
+}
+
+.img-resize {
+    height: 400px;
+    width: 525px;
+}
+

@@ -1,27 +1,35 @@
-var allFacts;
+let allFacts;
 
-function readFile(file) {
-    var f = new XMLHttpRequest();
-    f.open("GET", file, false);
-    f.onreadystatechange = function () {
-        if(f.readyState === 4) {
-            if(f.status === 200 || f.status == 0) {
-                allFacts = f.responseText;
-            }
-        }
-    }
-    f.send(null);
+// Fetches the file, and stores the facts in the allFacts variable
+let readFile = (file) => {
+    fetch(file)
+      .then(response => response.text())
+      .then((data) => {
+        allFacts = data.split("\n");
+      });
 }
 
-readFile('facts.txt');
-allFacts = allFacts.split("\n");
+readFile('../txt/facts.txt');
+// Took "onclick" action away from HTML button; "Separation of Concerns"
+const factButton = document.getElementById('fact-button');
 
-function newFact() {
-  // Changes the current fact with a random new one.
-  // We keep rerolling until we get a "new" one (not same as current)
-  var fact = allFacts[Math.floor(Math.random()*allFacts.length)];
-  while (fact == document.getElementById("fact").innerHTML || fact === "") fact = allFacts[Math.floor(Math.random()*allFacts.length)];
-  document.getElementById("fact").innerHTML = fact;
+let factText = document.getElementById("fact");
+
+// Initialise fact text variables
+let fact = "";
+let prevFact = "";
+
+// Changes the current fact with a random new one
+const newFact = () => {
+
+  while (fact === prevFact) {
+    fact = allFacts[Math.floor(Math.random() * (allFacts.length - 1))];
+  }
+  // Then record the last fact we successfully generated
+  prevFact = fact;
+
+  // DOM text assignment changed from use of 'innerHTML' to avoid "bad practice"
+  factText.textContent = fact;
 }
 
-window.onload = newFact;
+factButton.addEventListener('click', newFact);

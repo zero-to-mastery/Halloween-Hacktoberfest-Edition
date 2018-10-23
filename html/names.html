@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head id="head">
+  <!-- Head information is dynamically loaded -->
+  <!-- If you need to include a different stylesheet do so below -->
+  <script src="../js/cssLoad.js"></script> <!-- Dynamically Imports css -->
+  <link href="../css/nameMeanings.css" rel="stylesheet">
+  <link href="../css/nameConverter.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/fog.css" />
+</head>
+
+<body>
+  <div id="myNav">
+    <!-- NavBar is dynamically loaded -->
+    <!-- If you need to include links check out ./js/headFoot.js -->
+  </div>
+  <div id='fog-roll'>
+    <img src="https://media.giphy.com/media/xEjTM5COAKyNa/giphy-downsized.gif"/>
+  </div>
+
+  <main class="container fix-footer top-margin">
+      <div class="mx-5 pt-3p">
+        <ul class="nav nav-pills nav-justified subnav">
+
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#names">Halloween Name Meanings</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#gen">What's Your Halloween Name?</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Content Boxes -->
+      <div>
+        <div class="tab-content m-5">
+
+          <!-- Name Meanings -->
+          <div id="names" class="tab-pane fade-in show active">
+            <div class="card text-white bg-dark namecards">
+              <div class="row no-gutters">
+                <div class="col-auto">
+                  <img src="../images/cupcake.jpg" class="img-fluid nameImg" alt="Cupcake">
+                </div>
+                <div class="col">
+                  <div class="card-block px-4 py-3">
+                    <h4 class="card-title" id="card-name"></h4>
+                    <p class="name mb-4p" id="card-desc"></p>
+                    <!-- Removed unneccesary "href" property that was causing page refresh issues -->
+                    <a id="name-button" class="btn">New name!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Name Generator -->
+          <div id="gen" class="tab-panel fade px-5 py-2 text-center">
+            <div class="">
+              <div class="center">
+                <div id="register">
+                  <ion-icon id="previousButton" name="person"></ion-icon>
+                  <ion-icon id="forwardButton" name="arrow-forward"></ion-icon>
+
+                  <div id="inputContainer">
+                    <input type="text" id="inputField">
+                    <label id="inputLabel"></label>
+                    <div id="inputProgress"></div>
+                    <label id="info-div">if doesn't apply press spacebar</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <div id="myFoot">
+    <!-- Footer is dynamically loaded -->
+    <!-- If you need to include links check out ./js/headFoot.js -->
+  </div>
+
+
+  </div>
+
+  <div id="endScripts">
+    <!-- Global script files are imported from ./js/headFoot.js -->
+    <!-- Add page specific link below this line -->
+    <!-- Nedd this version for nameGenerato -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <!-- Need this version for nameGenerator -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <!-- audio files -->
+    <audio id="knock" src="../media/knock.mp3"></audio>
+    <audio id="hello" src="../media/happyh.mp3"></audio>
+    <!-- Names javascript file -->
+    <script src="../js/names.js"></script>
+    <!-- name converter js -->
+    <script src="../js/nameConverter.js"></script>
+    <!-- name object -->
+    <script src="../js/nameContainer.js"></script>
+    <!-- icon pack -->
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+  </div>
+
+  <!-- Loads Nav & Footer - IMPORTANT -->
+  <script src="../js/headFoot.js"></script>
+</body>
+
+</html>
