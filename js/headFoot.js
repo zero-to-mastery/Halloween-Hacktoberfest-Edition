@@ -51,7 +51,7 @@ const insertFooter = () =>{
     let mfContents = footerContainer.innerHTML;
     footerContainer.innerHTML =
       `<footer class="footer" >
-      <p>&copy; 2017-2018 Zero To Mastery Inc. &middot;
+      <p class="copywrite">&copy; 2017-2018 Zero To Mastery Inc. &middot;
       <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       <a id="back-to-top" href="#" class="back-to-top d-block"
           role="button" title="return to the top" data-toggle="tooltip"
@@ -85,4 +85,4 @@ const insertScripts = () =>{
 
 insertNav();
 insertFooter();
-insertScripts();
+insertScripts(); 
