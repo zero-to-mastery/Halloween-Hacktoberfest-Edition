@@ -37,7 +37,7 @@ const newName = () => {
   // DOM text assignment changed from use of 'innerHTML' to avoid "bad practice"
   cardName.textContent = textName;
   cardDesc.textContent = textDesc;
-}
+};
 
 const nameButton = document.getElementById('name-button');
 nameButton.addEventListener('click', newName);
