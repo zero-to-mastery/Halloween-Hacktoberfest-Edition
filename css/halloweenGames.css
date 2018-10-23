@@ -1,6 +1,11 @@
+.container {
+	z-index:1;
+}
+
 #fog-roll {
   position: absolute;
   width: 100%;
+  z-index:0;
 }
 
 h1 {
