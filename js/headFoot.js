@@ -65,7 +65,7 @@ const insertNav = () => {
 // Loads and implants the Footer
 // mfContents gets the contents of the element, so we can add them back in
 const insertFooter = () =>{
-  const footerContainer = document.getElementById("myFoot")
+  const footerContainer = document.getElementById("myFoot");
   if (footerContainer != null) {
     let mfContents = footerContainer.innerHTML;
     footerContainer.innerHTML =

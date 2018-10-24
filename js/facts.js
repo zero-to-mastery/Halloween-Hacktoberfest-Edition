@@ -1,7 +1,7 @@
-let allFacts;
+var allFacts;
 
 // Fetches the file, and stores the facts in the allFacts variable
-let readFile = (file) => {
+var readFile = (file) => {
     fetch(file)
       .then(response => response.text())
       .then((data) => {
@@ -11,16 +11,16 @@ let readFile = (file) => {
 
 readFile('../txt/facts.txt');
 // Took "onclick" action away from HTML button; "Separation of Concerns"
-const factButton = document.getElementById('fact-button');
+var factButton = document.getElementById('fact-button');
 
-let factText = document.getElementById("fact");
+var factText = document.getElementById("fact");
 
 // Initialise fact text variables
-let fact = "";
-let prevFact = "";
+var fact = "";
+var prevFact = "";
 
 // Changes the current fact with a random new one
-const newFact = () => {
+var newFact = () => {
 
   while (fact === prevFact) {
     fact = allFacts[Math.floor(Math.random() * (allFacts.length - 1))];
