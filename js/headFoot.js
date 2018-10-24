@@ -1,4 +1,4 @@
-// Before commiting any changes check for errors on all pages
+// Before committing any changes check for errors on all pages
 
 const urlCheck = (url) => {
   if (url.endsWith('/')) {
@@ -17,7 +17,7 @@ const urlRepair = (url) => {
 const insertNav = () => {
   const navContainer = document.getElementById("myNav");
   urlCheck(window.location.href)
-  // Add you page name to the bellow array without .html extension
+  // Add your page name to the below array without .html extension
   // if your page name is myNewPage the href attr will be myNewPage.html
   // and the link text will be My New Page
   const pages= ['index', 'about', 'recipes', 'facts', 'designs', 'names', 'movies', 'books',
