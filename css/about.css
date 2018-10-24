@@ -19,7 +19,9 @@
 }
 .pic{
 	height: 100%;
-	width: 500px;
+	width: 100%;
+	min-width: 14rem;
+	max-width: 31.5rem;
 	border-radius: 100px;
 	margin: 1rem;
     border:3px transparent dashed;
