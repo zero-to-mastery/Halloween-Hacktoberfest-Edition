@@ -2,7 +2,6 @@
 // hContents gets the contents of the element, so we can add them back in
 let hContents = document.getElementById("head").innerHTML;
 const url = window.location.href;
-var hContents = document.getElementById("head").innerHTML;
 document.getElementById('head').innerHTML =
     `${url.endsWith("index.html")?
         '<meta charset="utf-8">' +
