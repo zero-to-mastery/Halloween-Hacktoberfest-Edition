@@ -1,9 +1,22 @@
 // Before commiting any changes check for errors on all pages
 
+const urlCheck = (url) => {
+  if (url.endsWith('index.html')) {
+    return true;
+  }
+  return false;
+}
+
+const urlRepair = (url) => {
+  let arrUrl = url.split('/');
+  arrUrl.splice(-2);
+  return arrUrl.join('/');
+}
+
 // Generates and implants the NavBar
 const insertNav = () => {
   const navContainer = document.getElementById("myNav");
-  const url = window.location.href;
+  urlCheck(window.location.href)
   // Add you page name to the bellow array without .html extension
   // if your page name is myNewPage the href attr will be myNewPage.html
   // and the link text will be My New Page
@@ -19,15 +32,21 @@ const insertNav = () => {
               }
             return href[0].toUpperCase()+href.slice(1); // for 'catchTheWitch' will return 'Catch The Witch'
   }
+
   const generateLink = (href) =>
     `<li class="nav-item">
-      <a class="nav-link ${url.endsWith(`${href}.html`)?"active":(url.endsWith('/')&&href==='index'?"active":"")}"
-          href="${href}.html">${generateTitle(href)}</a>
+      <a class="nav-link ${window.location.href.endsWith(`${href}.html`)?"active":(window.location.href.endsWith('/')&&href==='index'?"active":"")}"
+          href="${urlCheck(window.location.href) 
+            ? href==='index' ? `${href}.html`:`html/${href}.html` 
+            : href==='index' ? `${urlRepair(window.location.href)}/index.html`:`${urlRepair(window.location.href)}/html/${href}.html`}">
+        ${generateTitle(href)}
+      </a>
     </li>`;
+
   navContainer.innerHTML =
   `<header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand" href="index.html"><img src="../images/ztm-halloween-logo.svg" alt="ZTM"/></a>
+      <a class="navbar-brand"><img src="${urlCheck(window.location.href) ? "./images/ztm-halloween-logo.svg" : "../images/ztm-halloween-logo.svg"}" alt="ZTM"/></a>
       <button class="navbar-toggler" type="button"
         data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,7 +97,7 @@ const insertScripts = () =>{
     addScript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', 'sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', 'anonymous');
     setTimeout(()=>{ addScript('https://code.jquery.com/jquery-3.3.1.min.js', 'sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', 'anonymous'); }, 100);
     setTimeout(()=>{ addScript('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', 'sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', 'anonymous'); }, 200);
-    setTimeout(()=>{ addScript('../js/global.js');}, 300);
+    setTimeout(()=>{ addScript(`${urlCheck(window.location.href) ? './js/global.js' : '../js/global.js'}`);}, 300);
   }
   console.log("Scripts ✔");
 }
