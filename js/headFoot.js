@@ -1,7 +1,7 @@
 // Before commiting any changes check for errors on all pages
 
 const urlCheck = (url) => {
-  if (url.endsWith('index.html')) {
+  if (url.endsWith('/')) {
     return true;
   }
   return false;
@@ -37,8 +37,8 @@ const insertNav = () => {
     `<li class="nav-item">
       <a class="nav-link ${window.location.href.endsWith(`${href}.html`)?"active":(window.location.href.endsWith('/')&&href==='index'?"active":"")}"
           href="${urlCheck(window.location.href) 
-            ? href==='index' ? `${href}.html`:`html/${href}.html` 
-            : href==='index' ? `${urlRepair(window.location.href)}/index.html`:`${urlRepair(window.location.href)}/html/${href}.html`}">
+            ? href==='index' ? '/':`html/${href}.html` 
+            : href==='index' ? `${urlRepair(window.location.href)}/`:`${urlRepair(window.location.href)}/html/${href}.html`}">
         ${generateTitle(href)}
       </a>
     </li>`;

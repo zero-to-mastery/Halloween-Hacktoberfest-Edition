@@ -33,19 +33,20 @@ witch.addEventListener('click', () => {
         points.textContent= ++highscore; 
     }
 
+    witchImg.src="../images/witchCatched.png";
     witch.classList.add('catched');
     witchImg.style.width= "580px";
     witch.style.left= (witch.parentElement.clientWidth/2)-(witchImg.clientWidth/2) +"px";
-    witch.style.top= ((witch.parentElement.clientHeight/2)-(witchImg.clientHeight/2))+"px"; 
-    witchImg.src='images/witchCatched.png';
+    witch.style.top= ((witch.parentElement.clientHeight/2)-(witchImg.clientHeight/2))+"px";
+    
 
 
     setTimeout( () => {
         witch.classList.remove('catched');
         witchImg.style.width="100px";
         witch.style.left= "0px";
-        witch.style.top= "0px"; 
-        witchImg.src='images/witch.png';
+        witch.style.top= "0px";
+        witchImg.src="../images/witch.png";
         moveWitch();
     }, 2000);
 });
