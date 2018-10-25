@@ -59,3 +59,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@toserjude](https://github.com/toserjude)
 - [@danIancuV](https://github.com/danIancuV)
 - [@Trapsta](https://github.com/Trapsta)
+- [@jongodinez](https://github.com/jongodinez)
