@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+#fog-roll #fog-roll-img {
+  height: 100%;
+}
+
 h1 {
   text-align: center;
   margin-top: 40px;
