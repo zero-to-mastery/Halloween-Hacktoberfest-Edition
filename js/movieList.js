@@ -153,11 +153,18 @@ var stopShuffle = () => {
     var randNoMov = Math.floor(Math.random() * (+randMaxMov - +randMinMov)) + +randMinMov;
     var movieListName = movieList[randNoMov].movieName;
     var movieImgUrl = movieList[randNoMov].imageURL;
-    var movieUrl = movieList[randNoMov].movieUrl;
-    addCardShuffle += '<div class="card-deck"><div class="card" style="width: 90%;">';
-    addCardShuffle += '<img class="card-img-top" src="' + movieImgUrl + '" alt="name">';
-    addCardShuffle += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieUrl + '" target="_blank">' + movieListName + '</a></h4></div></div></div>';
-    elem.innerHTML = addCardShuffle;
+    var movieUrl = movieList[randNoMov].movieUrl; 
+
+    addCardShuffle += `<div class="card-deck">
+                           <div class="card" style="width: 90%;">
+                              <img class="card-img-top" src="${movieImgUrl}" alt="name">
+                              <div class="card-img-overlay">
+                                 <h4 class="card-title cardMovieTitle">
+                                    <a href="${movieUrl}" target="_blank"> ${movieListName} </a>
+                                 </h4>
+                              </div>
+                           </div>
+                        </div>`;
 }
 // Set an interval and timeout
 stopText = elem.innerHTML = "";
