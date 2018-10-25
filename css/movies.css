@@ -117,3 +117,7 @@ body {
     height: 40%;
     margin: auto;
 }
+
+#movieRow {
+    margin-bottom: 2rem;
+}

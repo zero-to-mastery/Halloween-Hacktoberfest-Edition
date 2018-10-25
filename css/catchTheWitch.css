@@ -28,3 +28,9 @@ body {
 .fs-90 {
     font-size: 90px
 }
+
+#myFoot {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

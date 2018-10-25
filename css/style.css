@@ -235,7 +235,8 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
 }
 
 .footer {
-    height: var(--footer-height);
+    color: white;
+    height: 6rem;
     background-color: #343a40cc;
     display: flex;
     align-items: center;
@@ -243,7 +244,7 @@ CAN ANYONE MAKE IT SO THAT IT CATCHES COLOUR AS WE SCROLL DOWN THE PAGE?
 }
 
 .fix-footer {
-    min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+    min-height: calc(100vh - var(--navbar-height));
 }
 
 .footer a {
