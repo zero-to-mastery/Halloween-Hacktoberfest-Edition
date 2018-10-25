@@ -37,7 +37,7 @@ const insertNav = () => {
     `<li class="nav-item">
       <a class="nav-link ${window.location.href.endsWith(`${href}.html`)?"active":(window.location.href.endsWith('/')&&href==='index'?"active":"")}"
           href="${urlCheck(window.location.href) 
-            ? href==='index' ? '/':`html/${href}.html` 
+            ? href==='index' ? './':`html/${href}.html` 
             : href==='index' ? `${urlRepair(window.location.href)}/`:`${urlRepair(window.location.href)}/html/${href}.html`}">
         ${generateTitle(href)}
       </a>
@@ -46,7 +46,7 @@ const insertNav = () => {
   navContainer.innerHTML =
   `<header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand"><img src="${urlCheck(window.location.href) ? "./images/ztm-halloween-logo.svg" : "../images/ztm-halloween-logo.svg"}" alt="ZTM"/></a>
+      <a class="navbar-brand"><img src="${urlCheck(window.location.href) ? "./images/ztm-halloween-logo.svg" : "./images/ztm-halloween-logo.svg"}" alt="ZTM"/></a>
       <button class="navbar-toggler" type="button"
         data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
