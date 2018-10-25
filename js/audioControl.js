@@ -1,4 +1,4 @@
-var x = document.getElementById("myAudio");
+var x = document.getElementById("mainAudio");
 
 function enableMute() {
     x.muted = true;
