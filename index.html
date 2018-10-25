@@ -14,7 +14,7 @@
 
 
     <div id="player">
-        <audio autoplay hidden loop volume="1.0">
+        <audio id="mainAudio" autoplay hidden loop volume="1.0">
             <source src="./media/background.wav" type="audio/wav">
             If you're reading this, audio isn't supported.
         </audio>
@@ -55,6 +55,7 @@
 
                     <div class="md-form mb-3">
                         <i class="fas fa-unlock-alt"></i>
+
                         <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
                         <input type="password" id="orangeForm-pass" class="form-control validate" placeholder="Enter password">
 
@@ -156,6 +157,7 @@ div
                             recipes &raquo;</a></p>
                 </div>
 
+
                 <!-- Column 2 -->
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="rounded-circle-div" style="background-image:url(./images/pumpkin.jpg)">
@@ -210,7 +212,8 @@ div
                 <div class="col-md-5 order-md-1 feat-image mb-5" data-aos="fade-left">
                     <img class="featurette-image img-fluid mx-auto rounded" src="./images/pumpkin.jpg" alt="Generic placeholder image">
                 </div>  <button onclick="enableMute()" type="button">Mute sound</button>
-  <button onclick="disableMute()" type="button">Enable sound</button>
+  <button oncl
+  ick="disableMute()" type="button">Enable sound</button>
             </div>
 
 
