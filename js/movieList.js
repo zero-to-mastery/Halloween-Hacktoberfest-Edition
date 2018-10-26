@@ -10,7 +10,7 @@ var movieList = [
             movieUrl: "https://www.imdb.com/title/tt0121164/"
         },
         {
-            movieName: "Moster House",
+            movieName: "Monster House",
             imageURL: "http://www.asset1.net/tv/pictures/movie/monster-house-2006/Monster-House-01-1.jpg",
             movieUrl: "https://www.imdb.com/title/tt0385880/"
         },
