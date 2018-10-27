@@ -8,18 +8,23 @@
 }
 
 .heading {
-    font-size: 4em;
-    color: black;
-    padding-top: 15px;
+    font-size: 3em;
+    color: white;
+    padding-top: 45px;
+    background-color: rgb(0, 0, 0, 0.4);
+    max-width: 450px;
+    margin: auto;
 }
 
 .tc {
     text-align: center;
+    margin-top: 50px;
 }
 
 .center {
     margin-right: auto;
     margin-left: auto;
+    background-color: transparent;
 }
 
 .center-img {
@@ -29,9 +34,12 @@
     width: 50%;
 }
 
-h1,
-h2 {
-    color: black;
+.col-md {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+h3, p, ul, a {
+    color: white;
 }
 
 .wrapper {
