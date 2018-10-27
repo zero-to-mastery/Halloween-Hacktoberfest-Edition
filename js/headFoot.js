@@ -46,7 +46,7 @@ const insertNav = () => {
   navContainer.innerHTML =
   `<header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand"><img src="${window.location.href.includes('index') ? "./images/ztm-halloween-logo.svg" : "../images/ztm-halloween-logo.svg"}" alt="ZTM"/></a>
+      <a class="navbar-brand"><img src="${!window.location.href.includes('html') ? "./images/ztm-halloween-logo.svg" : "../images/ztm-halloween-logo.svg"}" alt="ZTM"/></a>
       <button class="navbar-toggler" type="button"
         data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
