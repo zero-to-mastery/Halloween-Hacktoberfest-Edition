@@ -11,3 +11,7 @@
 .card:hover {
     transform: scale(1.1);
 }
+
+#exampleModalCenter > .modal-dialog {
+  background-color: rgba(255, 255, 255, 0.5);
+}
