@@ -1,4 +1,4 @@
-const fName = {
+var fName = {
 	"a": "Creepy",
 	"b": "Deadly",
 	"c": "Eerie",
@@ -27,7 +27,7 @@ const fName = {
 	"z": "Grave"
 };
 
-const mName = {
+var mName = {
 	" ": "",
 	"a": "Potion",
 	"b": "Zombie",
@@ -57,7 +57,7 @@ const mName = {
 	"z": "Night"
 };
 
-const lName = {
+var lName = {
 	" ": "",
 	"a": "Stalker",
 	"b": "Breaker",

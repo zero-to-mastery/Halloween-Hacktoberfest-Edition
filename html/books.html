@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+
+<head id="head">
+  <meta charset="utf-8"/>
+  <!-- Head information is dynamically loaded -->
+  <!-- If you need to include a different stylesheet do so below -->
+
+  <script src="../js/cssLoad.js"></script> <!-- Dynamically Imports css -->
+  <link href="../css/books.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/fog.css" />
+</head>
+
+<body>
+  <div id="myNav">
+    <!-- NavBar is dynamically loaded -->
+    <!-- If you need to include links check out ./js/headFoot.js -->
+  </div>
+  <div id='fog-roll'>
+    <img src="https://media.giphy.com/media/xEjTM5COAKyNa/giphy-downsized.gif" />
+  </div>
+
+  <main role="main" id="main" class="top-margin fix-footer">
+
+
+    <div class="container">
+      <div class="books">
+     <h1>Spooky Reads</h1>
+        <div>
+        <form action="" role="search" class="search-form">
+          <input type="submit" value="" class="search-submit">
+          <input type="search" name="q" id="search-book" class="search-book" onkeyup="searchBook()" placeholder="Search book titles ..."
+           autocomplete="off">
+        </form>
+      </div>
+
+      <div class="books scrollbar">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+              <div class="card">
+              	<a href="https://www.goodreads.com/book/show/17061.Coraline">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1493497435l/17061.jpg" alt="Coraline">
+                <div class="card-body">
+                  <h3>Coraline</h3>
+                  <p>Neil Gaiman</p>
+                  <!-- p The day after Coraline moves into a new house, she discovers a passage to an alternate world, where her Other Mother wants to keep her forever. /p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/11588.The_Shining">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1353277730l/11588.jpg" alt="The Shining">
+                <div class="card-body">
+                  <h3>The Shining</h3>
+                  <p>Stephen King</p>
+                 <!--p Story of Jack Torrance's new job at the Overlook Hotel as the off-season caretaker.p -->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/1325218.Scary_Stories_to_Tell_in_the_Dark">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1440189576l/1325218.jpg" alt="Scary Stories to Tell in the Dark">
+                <div class="card-body">
+                  <h3>Scary Stories to Tell in the Dark</h3>
+                  <p>Alvin Schwartz</p>
+                  <!--p Collection of some of the most alarming tales of horror, dark revenge, and supernatural events of all time.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/43763.Interview_with_the_Vampire">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1462731030l/9646229.jpg" alt="Interview with the Vampire">
+                <div class="card-body">
+                  <h3>Interview with the Vampire</h3>
+                  <p>Anne Rice</p>
+                  <!--p Gothic horror novel that follows the story of vampire Louis de Pointe du Lac, which he shares with a reporter.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/21996.The_Devil_in_the_White_City">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1388184618l/259028.jpg" alt="The Devil in the White City">
+                <div class="card-body">
+                  <h3>The Devil in the White City</h3>
+                  <p> Erik Larson</p>
+                  <!--p The true tale of a serial killer who used the 1893 World's Fair to lure his victims to their death.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/4602032-dead-until-dark">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1266308969l/4602032.jpg" alt="Dead Until Dark">
+                <div class="card-body">
+                  <h3>Dead Until Dark</h3>
+                  <p>Charlaine Harris</p>
+                  <!--p Inspired HBO's True Blood; story of mind-reader Sookie Stackhouse and her vampire-boyfriend, Bill.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/17245.Dracula">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1394828802l/588495.jpg" alt="Dracula">
+                <div class="card-body">
+                  <h3>Dracula</h3>
+                  <p>Bram Stoker</p>
+                  <!--p During a business visit to Count Dracula's castle in Transylvania, a young English solicitor finds himself at the center of a series of horrifying incidents.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/23807.The_Silence_of_the_Lambs">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1390426249l/23807.jpg" alt="The Silence of the Lambs">
+                <div class="card-body">
+                  <h3>The Silence of the Lambs</h3>
+                  <p>Thomas Harris</p>
+                  <!--p While searching for a serial murderer, Clarice Starling must visit a man confined to a high-security facility for the criminally insane and interview him.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/89717.The_Haunting_of_Hill_House">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1327871336l/89717.jpg" alt="The Haunting of Hill House">
+                <div class="card-body">
+                  <h3>The Haunting of Hill House</h3>
+                  <p>Shirley Jackson</p>
+                  <!--p The greatest haunted house story ever written, the inspiration for a 10-part Netflix series directed by Mike Flanagan and starring Michiel Huisman, Carla Gugino, and Timothy Hutton.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/153025.Heart_Shaped_Box">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1328043955l/153025.jpg" alt="Heart-Shaped Box">
+                <div class="card-body">
+                  <h3>Heart-Shaped Box</h3>
+                  <p>Joe Hill</p>
+                  <!--p Judas Coyne is a collector of the macabre. But nothing he possesses is as dreadful the one-of-a-kind curiosity that arrives at his door in a black heart-shaped box...p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/12948.The_Turn_of_the_Screw">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1443203592l/12948.jpg" alt="The Turn of the Screw">
+                <div class="card-body">
+                  <h3>The Turn of the Screw</h3>
+                  <p>Henry James</p>
+                  <!--p The Turn of the Screw is part gothic and part ghost story. It first appeared in serial format in Collier's Weekly magazine (27 January – 16 April 1898).p-->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/902.The_Westing_Game">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1356850909l/902.jpg" alt="The Westing Game">
+                <div class="card-body">
+                  <h3>The Westing Game</h3>
+                  <p>Ellen Raskin</p>
+                  <!--p The story involves 16 seemingly unrelated heirs of reclusive businessman Sam Westing and his challenge to figure out the secret of his death.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/37034.The_Woman_in_Black">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1327869942l/37034.jpg" alt="The Woman in Black ">
+                <div class="card-body">
+                  <h3>The Woman in Black</h3>
+                  <p>Susan Hill</p>
+                  <!--p Novel written in the style of traditional Gothic stories. The plot concerns a mysterious spectre that haunts a small English town, heralding the death of children.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/24800.House_of_Leaves">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1403889034l/24800.jpg" alt="House of Leaves">
+                <div class="card-body">
+                  <h3>House of Leaves</h3>
+                  <p>Mark Z. Danielewski</p>
+                  <!--p The format and structure of House of Leaves is unconventional, with unusual page layout and style. Some see it as a tale of horror and also a love story.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/18857830-the-whisperer-in-darkness-and-other-stories">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1384877152l/18857830.jpg" alt="The Whisperer in Darkness">
+                <div class="card-body">
+                  <h3>The Whisperer in Darkness, and Other Stories</h3>
+                  <p>H.P. Lovecraft</p>
+                  <!--p It is a blend of horror and science fiction. Although it makes numerous references to the Cthulhu Mythos, the story is not a central part of the mythos.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="https://www.goodreads.com/book/show/160149.The_Call_of_Cthulhu_and_Other_Weird_Stories">
+              <div class="card">
+                <img class="card-img-top" src="https://images.gr-assets.com/books/1320618937l/160149.jpg" alt="the Call of Cthulhu">
+                <div class="card-body">
+                  <h3>The Call of Cthulhu and Other Weird Stories</h3>
+                  <p>H.P. Lovecraft</p>
+                  <!--p Lovecraft reinvented the horror genre in the 1920s, discarding ghosts and witches and instead envisioning mankind as a tiny outpost of dwindling sanity in a chaotic and malevolent universe.p-->
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+        </div><!-- /.row -->
+
+      </div><!-- /.books -->
+
+    </div><!-- /.container -->
+
+  </main>
+
+  <div id="myFoot">
+    <!-- Footer is dynamically loaded -->
+    <!-- If you need to include links check out ./js/headFoot.js -->
+  </div>
+
+  <div id="endScripts">
+    <!-- Global script files are imported from ./js/headFoot.js -->
+    <!-- Add page specific link below this line -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </div>
+
+  <!-- Loads Nav & Footer - IMPORTANT -->
+  <script src="../js/headFoot.js"></script>
+  <script src="../js/books.js"></script>
+
+</body>
+
+</html>

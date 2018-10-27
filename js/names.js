@@ -1,42 +1,31 @@
-function readFile(file) {
-  var f = new XMLHttpRequest();
-  f.open("GET", file, false);
-  f.onreadystatechange = function () {
-    if(f.readyState === 4) {
-      if(f.status === 200 || f.status == 0) {
-        allNames = f.responseText;
-      }
-    }
-  }
-  f.send(null);
+let namesFromFile;
+
+// Fetches the file, and stores the names in the namesFromFile variable
+const readFile = (file) => {
+    fetch(file)
+      .then(response => response.text())
+      .then((data) => {
+        namesFromFile = data.split("\n");
+      });
 }
 
-readFile('names.txt');
-
-var allNames = allNames.split("\n");
-
-// Took "onclick" action away from HTML button; "Separation of Concerns"
-var nameButton = document.getElementById('name-button');
-nameButton.addEventListener('click', newName);
-
-// Since they're reused again and again, allocated memory to card-name and card-desc DOM elements
-var cardName = document.getElementById('card-name');
-var cardDesc = document.getElementById('card-desc');
+readFile('../txt/names.txt');
 
 // Initialise name text variables
-var name = "";
-var prevName = "";
-var textName;
-var textDesc;
+let name = "";
+let prevName = "";
+let textName;
+let textDesc;
 
-newName();
+// Since they're reused again and again, allocated memory to card-name and card-desc DOM elements
+const cardName = document.getElementById('card-name');
+const cardDesc = document.getElementById('card-desc');
 
-// Changes the current name with a random new one
-function newName() {
-
-  // Assign name content from allNames array
+// Took "onclick" action away from HTML button; "Separation of Concerns"
+const newName = () => {
+  // Assign name content from namesFromFile array
   while (name === prevName) {
-    name = allNames[Math.floor(Math.random() * (allNames.length - 1))];
+    name = namesFromFile[Math.floor(Math.random() * (namesFromFile.length - 1))];
   }
   // Then record the last name we successfully generated
   prevName = name;
@@ -48,5 +37,9 @@ function newName() {
   // DOM text assignment changed from use of 'innerHTML' to avoid "bad practice"
   cardName.textContent = textName;
   cardDesc.textContent = textDesc;
-}
-// }
+};
+
+const nameButton = document.getElementById('name-button');
+nameButton.addEventListener('click', newName);
+
+

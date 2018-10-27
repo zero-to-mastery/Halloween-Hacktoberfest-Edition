@@ -1,24 +1,36 @@
-body{
+body {
     overflow: hidden;
     margin-top: 45px;
 }
 
-#myFoot{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 160px;
-}
-
-.highscoreInfo{
+.highscoreInfo {
     text-align: center;
     background-color: #343a40cc;
     padding-right: 30px;
-    padding-top:10px;
+    padding-top: 25px;
     height: 67vh;
     margin-top: 35px;
 }
 
-.description{
-    margin-top:150px;
+.description {
+    margin-top: 15%;
+}
+
+/* font-size */
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-90 {
+    font-size: 90px
+}
+
+#myFoot {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }

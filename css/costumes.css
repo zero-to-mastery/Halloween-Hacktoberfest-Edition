@@ -12,30 +12,26 @@
     overflow: hidden;
 } */
 
-/* 
+/*
 .green {
     background-color: #6fb936;
 } */
+
+/* margins */
+.mb-5p {
+    margin-bottom: 5%;
+}
 
 .thumb {
     margin-bottom: 20px;
 }
 
 img.zoom {
-    width: 250px;
-    height: 200px;
-
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
-}
-
-.transition {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+    transition: all .3s ease-in-out;
 }
 
 #halloweenCostumes {
@@ -43,5 +39,33 @@ img.zoom {
     color: #F75F1C;
     font-family: 'Indie Flower', cursive;
     font-size: 60px;
-    margin-top: 20px;
+    padding: 5%;
+
+}
+
+.fancybox {
+    overflow: hidden;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    display: block;
+}
+
+.fancybox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.fancybox:hover img.zoom {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+    -moz-transform: translate(-50%, -50%) scale(1.2);
+    -o-transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.2);
 }

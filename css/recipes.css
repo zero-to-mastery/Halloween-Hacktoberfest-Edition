@@ -18,6 +18,7 @@
 
 .tc {
     text-align: center;
+    margin-top: 50px;
 }
 
 .center {
@@ -49,5 +50,10 @@ h3, p, ul, a {
     .pa4-ns {
         padding: 2rem;
     }
+}
+
+.img-resize {
+    height: 400px;
+    width: 525px;
 }
 

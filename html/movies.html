@@ -4,9 +4,9 @@
 <head id="head">
   <!-- Head information is dynamically loaded -->
   <!-- If you need to include a different stylesheet do so below -->
-  <script src="./js/cssLoad.js"></script> <!-- Dynamically Imports css -->
-  <link href="./css/movies.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/fog.css" />
+  <script src="../js/cssLoad.js"></script> <!-- Dynamically Imports css -->
+  <link href="../css/movies.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/fog.css" />
 </head>
 
 <body>
@@ -18,19 +18,19 @@
      <img src="https://media.giphy.com/media/xEjTM5COAKyNa/giphy-downsized.gif"/>
   </div>
 
-  <main role="main">
+  <main role="main" class="top-margin">
 
     <hr />
-    <div class="row">
+    <div id='movieRow' class="row">
       <div class="container">
         <!-- Random movie shuffle container -->
         <div class="col">
           <div class="randMovieDiv">
             <h2 id="questionMovie">Which Halloween movie should you see tonight?</h2>
               <div id="randomMovie"></div>
-              <div class="loader" id="loadCircle"></div>
-              <div id="imagePumpkin" style="display: none;">
-                <img src="https://i.pinimg.com/originals/77/d9/4d/77d94d850efa36d3c9d10e0543b33fc6.png" height="50" width="50" />
+              <div class="loader" id="loadCircle" style="margin-top:1rem"></div>
+              <div id="imagePumpkin" style="display: none">
+                <img src="https://i.pinimg.com/originals/77/d9/4d/77d94d850efa36d3c9d10e0543b33fc6.png" height="50" width="50" style="margin-top:1rem"/>
               </div>
           </div>
         </div>
@@ -55,9 +55,9 @@
   <div id="endScripts"></div>
 
   <!-- Loads Nav & Footer - IMPORTANT -->
-  <script src="./js/headFoot.js"></script>
+  <script src="../js/headFoot.js"></script>
   <!-- Load movie array -->
-  <script src="./js/movieList.js"></script>
+  <script src="../js/movieList.js"></script>
 </body>
 
 </html>
