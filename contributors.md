@@ -62,3 +62,6 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@Trapsta](https://github.com/Trapsta)
 - [@jongodinez](https://github.com/jongodinez)
 - [@Platyka](https://github.com/Platyka)
+- [@kevinsou](https://github.com/kevinsou)
+- [@Seasick-Turtle](https://github.com/Seasick-Turtle)
+- [@Uniiquee](https://github.com/Uniiquee)
