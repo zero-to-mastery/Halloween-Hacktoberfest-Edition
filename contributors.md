@@ -61,4 +61,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@danIancuV](https://github.com/danIancuV)
 - [@Trapsta](https://github.com/Trapsta)
 - [@jongodinez](https://github.com/jongodinez)
+- [@Seasick-Turtle](https://github.com/Seasick-Turtle)
 - [@Uniiquee](https://github.com/Uniiquee)
