@@ -67,4 +67,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@Uniiquee](https://github.com/Uniiquee)
 - [@x41h](https://github.com/x41h)
 - [@SimeonKostov](https://github.com/SimeonKostov)
+- [@CarolMLGO](https://github.com/CarolMLGO)
 
