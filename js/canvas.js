@@ -20,7 +20,13 @@ frankenstein.src = "../images/icons/frankenstein.svg";
 var ghost = new Image();
 ghost.src = "../images/icons/ghost.svg"; 
 var candle = new Image();
-candle.src = "../images/icons/candle.svg"; 
+candle.src = "../images/icons/candle.svg";
+var costume = new Image();
+costume.src = "../images/icons/candle.svg";
+var theme = new Image();
+theme.src = "../images/icons/candle.svg";
+var chocolates = new Image();
+chocolates.src = "../images/icons/candle.svg";
 //var bat = new Image();
 //bat.src = "../images/icons/bat.svg"; 
 
