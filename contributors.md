@@ -65,3 +65,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@kevinsou](https://github.com/kevinsou)
 - [@Seasick-Turtle](https://github.com/Seasick-Turtle)
 - [@Uniiquee](https://github.com/Uniiquee)
+- [@x41h](https://github.com/x41h)
+
