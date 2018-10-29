@@ -1,6 +1,7 @@
     var searchButton = document.getElementById('activateSearch');
     var movieBox = document.getElementById('movies');
     var searchWord = document.getElementById("searchMovie");
+    let title = "";
     var handleErrors = (response) => {
         if (!response.ok) {
             throw Error(response.statusText);
@@ -23,7 +24,7 @@
             `
             <div class="col-md-3 movie-search-card">
             <h2>${Title}</h2>
-            <img src="${Poster}" alt="${Title}"/>
+            <a href="https://www.google.com/search?q=${Title}&newwindow=1"><img src="${Poster}" alt="${Title}"/></a>
             <a target="_blank" href="https://www.imdb.com/title/${imdbID}">View on IMDB</a>
             </div>
             `
@@ -39,3 +40,11 @@
             runSearch();
         }
     });
+
+    const googleMovie = () => {
+        if (!title) {return;}
+
+        let window = new Window();
+        window.open(`https://www.google.com/search?q=${title}&newwindow=1`)
+    }
+

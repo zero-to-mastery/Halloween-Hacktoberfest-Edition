@@ -133,11 +133,14 @@ var randNo = Math.floor(Math.random() * (+randMax - +randMin)) + randMin;
 // Loop through the movies array and change text
 var counter = 0;
 var elem = document.getElementById("randomMovie");
+let searchURL = `https://www.google.com/search?q=${movieList[counter].movieName}&newwindow=1`;
 var change = () => {
     var addCardChange = "";
     addCardChange += '<div class="card-deck"><div class="card" style="width: 90%;">';
-    addCardChange += '<img class="card-img-top" src="' + movieList[counter].imageURL + '" alt="name">';
-    addCardChange += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' + movieList[counter].movieUrl + '" target="_blank">' + movieList[counter].movieName + '</a></h4></div></div></div>';
+    addCardChange += '<a href="' + searchURL + '"><img class="card-img-top" src="' + movieList[counter].imageURL + '" alt="name"></a>';
+    addCardChange += '<div class="card-img-overlay"><h4 class="card-title cardMovieTitle"><a href="' 
+    + movieList[counter].movieUrl + '" target="_blank">' + 
+    movieList[counter].movieName + '</a></h4></div></div></div>';
     elem.innerHTML = addCardChange;
     counter++;
     if (counter >= movieList.length) {
