@@ -1,11 +1,11 @@
-.recipes {
+/*.recipes {
     background-image: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 255, 255, 0.158)), url('../images/recipeback.jpeg');
     background-size: cover;
-    /* position: relative; */
+    position: relative; 
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
+}*/
 
 .heading {
     font-size: 3em;
@@ -14,6 +14,10 @@
     background-color: rgb(0, 0, 0, 0.4);
     max-width: 450px;
     margin: auto;
+}
+.heading:hover{
+    color:yellow;
+    transform: scale(1.2)
 }
 
 .tc {
@@ -27,20 +31,22 @@
     background-color: transparent;
 }
 
-.center-img {
+/*.center-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
+}*/
 
 .col-md {
     background-color: rgb(0, 0, 0, 0.4);
 }
 
-h3, p, ul, a {
-    color: white;
+h3,p,#step {
+    color: rgb(245, 163, 173);
+    font-family: 'Kalam', cursive,'Chakra Petch', sans-ser;
 }
+
 
 .wrapper {
     text-align: center;
