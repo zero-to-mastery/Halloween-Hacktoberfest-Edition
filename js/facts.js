@@ -12,7 +12,6 @@ var readFile = (file) => {
 readFile('../txt/facts.txt');
 // Took "onclick" action away from HTML button; "Separation of Concerns"
 var factButton = document.getElementById('fact-button');
-
 var factText = document.getElementById("fact");
 
 // Initialise fact text variables

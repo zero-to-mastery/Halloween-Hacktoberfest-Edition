@@ -4,9 +4,9 @@
     <!-- Head information is dynamically loaded -->
     <!-- If you need to include a different stylesheet do so below -->
     <script src="../js/cssLoad.js"></script> <!-- Dynamically Imports css -->
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/fog.css"/>
     <link href="../css/facts.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
 
 </head>
 
@@ -31,8 +31,18 @@
             <!-- a id="fact-button" class="btn">New fact!</a -->
         </div>
 		 <div class="card-body" style="text-align: center">
-            <p id="fact" class="card-text">Halloween is new to Indian community and we started celebrating recently. Pune community organizes various events on Halloween themes as well as provide food and beverages during the event. Happy to see the change in a conservative society </p>
+            <p id="fact" class="card-text">Halloween is new to Indian community and we started celebrating recently. Pune community organizes various events on Halloween themes as well as provide food and beverages during the event. Happy to see the change in a conservative society. </p>
             <!-- a id="fact-button" class="btn">Super fact!</a -->
+        </div>
+        <div class="card-body" style="text-align: center">
+            <p id="fact" class="card-text">Dressing up on Halloween comes from the Celts.
+            Celts believed Samhain was a time when the wall between our world and the paranormal world was porous and spirits could get through. Because of this belief, it was common for the Celts to wear costumes and masks during the festival to ward off or befuddle any evil spirits.</p>
+        </div>
+        <div class="card-body" style="text-align: center">
+            <p id="fact" class="card-text">A full moon on Halloween is extremely rare.
+            Though a common trope in horror movies and Halloween decorations with witches flying across the full moon, the next full moon on Halloween won't occur until 2020.
+
+            The most recent Halloween full moon was back in 2001, and before that it was in 1955.</p>
         </div>
     </div>
 </main>
@@ -70,7 +80,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 2 seconds
+    setTimeout(carousel, 7500); // Change image every 3 seconds
 }
 </script>
 </body>
