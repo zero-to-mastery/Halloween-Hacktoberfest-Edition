@@ -9,10 +9,10 @@
 } */
 
 #fact {
-    color: white;
-    font-family: 'Caveat', cursive;
+    color: lightgrey;
+    font-family: 'Nanum Gothic Coding', monospace;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 2.3rem;
 }
 
