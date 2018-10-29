@@ -34,11 +34,11 @@ img.zoom {
     transition: all .3s ease-in-out;
 }
 
-#halloweenCostumes {
+.halloweenCostumes {
     text-align: center;
-    color: #F75F1C;
+    color: white;
     font-family: 'Indie Flower', cursive;
-    font-size: 60px;
+    font-size: 40px;
     padding: 5%;
 
 }
