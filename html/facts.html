@@ -28,10 +28,13 @@
                 a number of countries on 31 October, the eve of the Western Christian feast of All Hallows' Day. It
                 begins the three-day observance of Allhallowtide, the time in the liturgical year dedicated to
                 remembering the dead, including saints (hallows), martyrs, and all the faithful departed.</p>
-            <a id="fact-button" class="btn">New fact!</a>
+            <!-- a id="fact-button" class="btn">New fact!</a -->
+        </div>
+		 <div class="card-body" style="text-align: center">
+            <p id="fact" class="card-text">Halloween is new to Indian community and we started celebrating recently. Pune community organizes various events on Halloween themes as well as provide food and beverages during the event. Happy to see the change in a conservative society </p>
+            <!-- a id="fact-button" class="btn">Super fact!</a -->
         </div>
     </div>
-
 </main>
 
 
@@ -54,6 +57,22 @@
 
 <!-- Loads Nav & Footer - IMPORTANT -->
 <script src="../js/headFoot.js"></script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("card-text");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
 </body>
 
 </html>
