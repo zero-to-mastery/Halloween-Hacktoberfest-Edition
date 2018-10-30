@@ -106,6 +106,16 @@ body {
     margin-bottom: 1px;
 }
 
+
+.card {
+    transition-timing-function: ease;
+    transition: 1s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+
 #movieTitle {
     color: rgba(145, 45, 145, 0.74);
     text-align: center;
@@ -120,4 +130,9 @@ body {
 
 #movieRow {
     margin-bottom: 2rem;
+}
+
+.active-purple-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #ce93d8;
+    box-shadow: 0 0 0 1px #ce93d8;
 }
