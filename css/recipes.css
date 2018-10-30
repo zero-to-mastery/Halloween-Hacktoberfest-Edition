@@ -7,6 +7,54 @@
     background-repeat: no-repeat;
 }*/
 
+.icon {
+    overflow: hidden;
+    position: fixed;
+}
+.food-icon {
+    right:0;
+    top: 3;
+    width: 200px;
+    height: 100px;
+    padding:10px,100px,0px,5px;
+}
+.drink-icon {
+    right:0;
+    top: 10;
+    width:100px;
+}
+.menu-img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+/*.food-icon {
+    right:0;
+    top: 5;
+    width: 150px;
+    height: 120px;
+    /*border: 3px solid blue;*/
+    padding-right:100px;
+}*/
+
+.menu{
+    display: flex;
+    flex-flow:column wrap;
+
+}
+
+
+
+/*.navbar{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}*/
+
 .heading {
     font-size: 3em;
     color: white;
