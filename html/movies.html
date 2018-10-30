@@ -37,8 +37,15 @@
         <!-- Halloween movie card list -->
         <div class="col-12">
           <h1 id="movieTitle">Halloween Movies</h1>
-          <div class="card-columns" id="movieCards"></div>
+
+          <div class="active-purple-3 active-purple-4 mb-4" >
+              <input class="form-control w-25" type="text" id="search-movie" onkeyup="searchMovie()" placeholder="Search" aria-label="Search">
+          </div>
+
+          <div class="card-columns" id="movieCards">
+          </div>
         </div>
+
       </div>
     </div>
   </main>
