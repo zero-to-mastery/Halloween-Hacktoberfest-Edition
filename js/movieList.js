@@ -160,7 +160,9 @@ var stopShuffle = () => {
 
     addCardShuffle += `<div class="card-deck">
                            <div class="card" style="width: 90%;">
-                              <img class="card-img-top" src="${movieImgUrl}" alt="name">
+                                <a href="${movieUrl}" target="_blank"> 
+                                    <img class="card-img-top" src="${movieImgUrl}" alt="name">
+                                </a>
                               <div class="card-img-overlay">
                                  <h4 class="card-title cardMovieTitle">
                                     <a href="${movieUrl}" target="_blank"> ${movieListName} </a>
@@ -192,7 +194,9 @@ for (var i = 0; i < movieList.length; i++) {
     var movieUrl = movieList[i].movieUrl;
     addCard +=`<div class="card-deck">
                     <div class="card" style="width: 90%;">
+                            <a href="${movieUrl}" target="_blank"> 
                             <img class="card-img-top" src="${movieImgUrl}" alt="name">
+                            </a>
                             <div class="card-img-overlay">
                                 <h4 class="card-title cardMovieTitle">
                                     <a href="${movieUrl}" target="_blank"> ${movieListName} </a>
@@ -207,20 +211,20 @@ for (var i = 0; i < movieList.length; i++) {
 }
 
 
- var searchMovie = () => {
+ const searchMovie = () => {
  input = document.getElementById('search-movie');
- filter = input.value.toUpperCase();
+ filter = input.value.toLowerCase();
 
- var movies = document.getElementsByClassName("card");
-
- for (i = 0; i < movies.length; i++) {
-        movie = movies[i].getElementsByTagName('h4');
-        if (movie[0].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            movies[i].style.display = "";
-        } else {
-            movies[i].style.display = "none";
-        }
+ const movies = document.getElementsByClassName("card");
+ Array.from(movies).forEach((movie)=>{
+    const movieEach=movie.getElementsByClassName('cardMovieTitle')[0].textContent
+    console.log(movieEach.toLowerCase())
+    if (movieEach.toLowerCase().indexOf(filter)!=-1){
+        movie.style.display='';
+    } else {
+        movie.style.display='none';
     }
-  };
+ })
+}
 
-  searchMovie();
+searchMovie();
