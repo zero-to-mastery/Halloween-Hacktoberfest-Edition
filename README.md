@@ -1,6 +1,7 @@
 # Halloween - Hacktoberfest Edition ![Level](https://img.shields.io/badge/Tech-HTML-orange.svg?longCache=true&style=for-the-badge)
 
-**__UPDATE__**
+**UPDATE**
+
 **The Halloween repo has been split into two editions. The Hacktoberfest Edition will be locked at the end of October to preserve its state at the end of Hacktoberfest. If you would like to continue its development, you can do so in the General Edition [HERE](https://github.com/zero-to-mastery/Halloween-Hacktoberfest-Edition/edit/master/README.md)**
 
 
