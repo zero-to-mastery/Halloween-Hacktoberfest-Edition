@@ -42,9 +42,9 @@ body {
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
-.movieListContainer {
+/*.movieListContainer {
     margin-top: 5rem;
-}
+}*/
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
@@ -136,3 +136,11 @@ body {
     border: 1px solid #ce93d8;
     box-shadow: 0 0 0 1px #ce93d8;
 }
+
+.scrollbar {
+  overflow:scroll;
+  border:5px solid white;
+  height:500px;
+}
+
+
