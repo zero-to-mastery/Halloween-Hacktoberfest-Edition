@@ -70,5 +70,5 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 - [@CarolMLGO](https://github.com/CarolMLGO)
 - [@ZoliEsq](https://github.com/ZoliEsq)
 - [@DanCHayes](https://github.com/DanCHayes)
-
+- [@diegojp747](https://github.com/diegojp747)
 
