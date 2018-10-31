@@ -143,7 +143,7 @@ var movieList = [
     movieUrl: 'https://www.imdb.com/title/tt5220122/'
   },
   {
-    movieName: 'Pycho (1960)',
+    movieName: 'Psycho (1960)',
     imageURL:
       'http://cineplex.media.baselineresearch.com/images/77143/77143_full.jpg',
     movieURL: 'https://www.imdb.com/title/tt0054215/'
