@@ -123,6 +123,11 @@ var movieList = [
             movieName: "The Crow",
             imageURL: "https://m.media-amazon.com/images/M/MV5BMTkwZGVmMTctNTQxZS00MzM4LWEyNjctNDIxYzllZDY4YWJmXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_.jpg",
             movieUrl: "https://www.imdb.com/title/tt0109506/"
+        },
+        {
+            movieName: "Insidious",
+            imageURL: "https://m.media-amazon.com/images/M/MV5BMTYyOTAxMDA0OF5BMl5BanBnXkFtZTcwNzgwNTc1NA@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+            movieUrl: "https://www.imdb.com/title/tt1591095/"
         }
     ];
 
