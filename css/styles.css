@@ -1,0 +1,21 @@
+#myCarousel .carousel-item {
+    background-size: cover!important;
+    height: 100vh;
+    background-attachment: fixed!important;
+}
+
+#myCarousel .carousel-container {
+	height: 100vh;
+}
+
+#myCarousel .carousel-item .carousel-caption {
+	bottom: unset;
+}
+
+#myCarousel .carousel-item:first-child .carousel-caption {
+	top: calc(50% - 85px);
+}
+
+#myCarousel .carousel-item .carousel-caption h1 {
+	font-weight: 100;
+}

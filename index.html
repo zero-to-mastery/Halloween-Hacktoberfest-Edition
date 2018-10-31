@@ -15,12 +15,12 @@
             margin-left: 12px;
         }
     </style>
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Halloween Hacktoberfest</title>
 </head>
 
 <body>
-
-
     <div id="player">
         <audio id="mainAudio" autoplay hidden loop volume="1.0">
             <source src="./media/background.wav" type="audio/wav">
@@ -95,22 +95,19 @@
                 <video autoplay muted loop>
                     <source src="./media/spooky.webm" type="video/webm">
                 </video>
-                <div class="container">
-                    <div class="carousel-caption text-left">
+                <div class="carousel-container d-flex justify-content-center align-items-center">
+                    <div class="carousel-caption">
                         <h1>Halloween Facts</h1>
                         <p class="tex">Halloween tops Valentine's Day in candy sales.</p>
-                        <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                Sign up
-                            </button></p>
+                        <p><button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Sign up</button></p>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-item">
-                <img class="second-slide" src="./images/banners/pumpbanner.png" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption text-left">
+            <div class="carousel-item" style="background: url(./images/banners/pumpbanner.png)">
+                <div class="carousel-container d-flex justify-content-center align-items-center">
+                    <div class="carousel-caption">
                         <h1>Pumpkin Carving Designs</h1>
                         <p>See some pumpkin carving positively ghoulish pumpkin carving designs</p>
                         <p><a class="btn btn-lg btn-primary" href="designs.html" role="button">Be Inspired</a></p>
@@ -119,10 +116,9 @@
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-item">
-                <img class="third-slide" src="./images/banners/clownslide.png" alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption text-left">
+            <div class="carousel-item" style="background: url(./images/banners/clownslide.png);">
+                <div class="carousel-container d-flex justify-content-center align-items-center">
+                    <div class="carousel-caption">
                         <h1>One more for good measure.</h1>
                         <p>Halloween is the second highest grossing commercial holiday after Christmas</p>
                         <p><a class="btn btn-lg btn-primary" href="costumes.html" role="button">Browse gallery</a></p>
@@ -132,11 +128,11 @@
         </div>
 
         <!-- Carousel Nav Buttons (Left and Right) -->
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev d-none" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next d-none" href="#myCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
