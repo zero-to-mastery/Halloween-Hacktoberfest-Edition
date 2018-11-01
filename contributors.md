@@ -71,3 +71,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 -   [@ZoliEsq](https://github.com/ZoliEsq)
 -   [@DanCHayes](https://github.com/DanCHayes)
 -   [@dimitrisz123](https://github.com/dimitrisz123)
+-   [@diegojp747](https://github.com/diegojp747)
