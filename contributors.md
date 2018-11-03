@@ -72,3 +72,4 @@ This is a list showing the GitHub usernames of all who have contributed to this 
 -   [@DanCHayes](https://github.com/DanCHayes)
 -   [@dimitrisz123](https://github.com/dimitrisz123)
 -   [@diegojp747](https://github.com/diegojp747)
+-   [@rashait95](https://github.com/rashait95)
